@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
+		ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F201C7B21F600872D80 /* ViewController.swift */; };
+		ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F221C7B21F600872D80 /* Main.storyboard */; };
+		ADE05F271C7B21F600872D80 /* FISU_application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */; };
+		ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F281C7B21F600872D80 /* Assets.xcassets */; };
+		ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */; };
+		ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE05F331C7B21F600872D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE05F131C7B21F500872D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE05F1A1C7B21F500872D80;
+			remoteInfo = FISU_application;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADE05F1B1C7B21F500872D80 /* FISU_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FISU_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADE05F201C7B21F600872D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADE05F231C7B21F600872D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADE05F261C7B21F600872D80 /* FISU_application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FISU_application.xcdatamodel; sourceTree = "<group>"; };
+		ADE05F281C7B21F600872D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE05F2B1C7B21F600872D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADE05F2D1C7B21F600872D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FISU_applicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FISU_applicationTests.swift; sourceTree = "<group>"; };
+		ADE05F381C7B21F600872D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE05F181C7B21F500872D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE05F2F1C7B21F600872D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADE05F121C7B21F500872D80 = {
+			isa = PBXGroup;
+			children = (
+				ADE05F1D1C7B21F500872D80 /* FISU_application */,
+				ADE05F351C7B21F600872D80 /* FISU_applicationTests */,
+				ADE05F1C1C7B21F500872D80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE05F1C1C7B21F500872D80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE05F1B1C7B21F500872D80 /* FISU_application.app */,
+				ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE05F1D1C7B21F500872D80 /* FISU_application */ = {
+			isa = PBXGroup;
+			children = (
+				ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */,
+				ADE05F201C7B21F600872D80 /* ViewController.swift */,
+				ADE05F221C7B21F600872D80 /* Main.storyboard */,
+				ADE05F281C7B21F600872D80 /* Assets.xcassets */,
+				ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */,
+				ADE05F2D1C7B21F600872D80 /* Info.plist */,
+				ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */,
+			);
+			path = FISU_application;
+			sourceTree = "<group>";
+		};
+		ADE05F351C7B21F600872D80 /* FISU_applicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */,
+				ADE05F381C7B21F600872D80 /* Info.plist */,
+			);
+			path = FISU_applicationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADE05F1A1C7B21F500872D80 /* FISU_application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE05F3B1C7B21F600872D80 /* Build configuration list for PBXNativeTarget "FISU_application" */;
+			buildPhases = (
+				ADE05F171C7B21F500872D80 /* Sources */,
+				ADE05F181C7B21F500872D80 /* Frameworks */,
+				ADE05F191C7B21F500872D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FISU_application;
+			productName = FISU_application;
+			productReference = ADE05F1B1C7B21F500872D80 /* FISU_application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADE05F311C7B21F600872D80 /* FISU_applicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE05F3E1C7B21F600872D80 /* Build configuration list for PBXNativeTarget "FISU_applicationTests" */;
+			buildPhases = (
+				ADE05F2E1C7B21F600872D80 /* Sources */,
+				ADE05F2F1C7B21F600872D80 /* Frameworks */,
+				ADE05F301C7B21F600872D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE05F341C7B21F600872D80 /* PBXTargetDependency */,
+			);
+			name = FISU_applicationTests;
+			productName = FISU_applicationTests;
+			productReference = ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE05F131C7B21F500872D80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Arnaud ZARAGOZA";
+				TargetAttributes = {
+					ADE05F1A1C7B21F500872D80 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					ADE05F311C7B21F600872D80 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = ADE05F1A1C7B21F500872D80;
+					};
+				};
+			};
+			buildConfigurationList = ADE05F161C7B21F500872D80 /* Build configuration list for PBXProject "FISU_application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADE05F121C7B21F500872D80;
+			productRefGroup = ADE05F1C1C7B21F500872D80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE05F1A1C7B21F500872D80 /* FISU_application */,
+				ADE05F311C7B21F600872D80 /* FISU_applicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE05F191C7B21F500872D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */,
+				ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */,
+				ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE05F301C7B21F600872D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE05F171C7B21F500872D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE05F271C7B21F600872D80 /* FISU_application.xcdatamodeld in Sources */,
+				ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */,
+				ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE05F2E1C7B21F600872D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE05F341C7B21F600872D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE05F1A1C7B21F500872D80 /* FISU_application */;
+			targetProxy = ADE05F331C7B21F600872D80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADE05F221C7B21F600872D80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE05F231C7B21F600872D80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE05F2B1C7B21F600872D80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADE05F391C7B21F600872D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADE05F3A1C7B21F600872D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADE05F3C1C7B21F600872D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FISU_application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "polytech.FISU-application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADE05F3D1C7B21F600872D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FISU_application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "polytech.FISU-application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADE05F3F1C7B21F600872D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FISU_applicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "polytech.FISU-applicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FISU_application.app/FISU_application";
+			};
+			name = Debug;
+		};
+		ADE05F401C7B21F600872D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FISU_applicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "polytech.FISU-applicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FISU_application.app/FISU_application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE05F161C7B21F500872D80 /* Build configuration list for PBXProject "FISU_application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE05F391C7B21F600872D80 /* Debug */,
+				ADE05F3A1C7B21F600872D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE05F3B1C7B21F600872D80 /* Build configuration list for PBXNativeTarget "FISU_application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE05F3C1C7B21F600872D80 /* Debug */,
+				ADE05F3D1C7B21F600872D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADE05F3E1C7B21F600872D80 /* Build configuration list for PBXNativeTarget "FISU_applicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE05F3F1C7B21F600872D80 /* Debug */,
+				ADE05F401C7B21F600872D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADE05F261C7B21F600872D80 /* FISU_application.xcdatamodel */,
+			);
+			currentVersion = ADE05F261C7B21F600872D80 /* FISU_application.xcdatamodel */;
+			path = FISU_application.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADE05F131C7B21F500872D80 /* Project object */;
+}
