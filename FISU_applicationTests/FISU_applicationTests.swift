@@ -21,9 +21,39 @@ class FISU_applicationTests: XCTestCase {
         super.tearDown()
     }
     
+    func testProgramme() {
+        let programme = Programme()
+        let ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
+        let conf = Activity(name: "Conf intro", place: Place.polytech, begin: "02-22-2016 08:30", end: "02-23-2016 11:30")
+        let miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
+        let rando = Activity(name: "Rando", place: Place.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        
+        XCTAssertEqual(programme.numberOfDays(), 0, "Error")
+        
+        var truc = programme.addActivity(ski)
+        XCTAssertEqual(programme.numberOfDays(), 1, "Error")
+        
+    }
+    
+    func testDayWithActivity() {
+        let dayWithActivities = DayWithActivities()
+        
+        let ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
+        let conf = Activity(name: "Conf intro", place: Place.polytech, begin: "02-22-2016 08:30", end: "02-23-2016 11:30")
+        let miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
+        let rando = Activity(name: "Rando", place: Place.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        
+        XCTAssertEqual(dayWithActivities.numberOfDays(), 0, "Error")
+        
+        var truc = dayWithActivities.addActivity(ski)
+        XCTAssertEqual(dayWithActivities.numberOfDays(), 1, "Error")
+        
+    }
+    
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let ac = Activity.ski
+        print(ac.begin)
+        
     }
     
     func testPerformanceExample() {

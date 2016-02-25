@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */; };
+		ADAAB9001C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */; };
+		ADAAB9011C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */; };
+		ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
+		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
+		ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
+		ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
 		ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
 		ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F201C7B21F600872D80 /* ViewController.swift */; };
 		ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F221C7B21F600872D80 /* Main.storyboard */; };
@@ -14,6 +21,24 @@
 		ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F281C7B21F600872D80 /* Assets.xcassets */; };
 		ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */; };
 		ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */; };
+		ADE05F421C7B235200872D80 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F411C7B235200872D80 /* Event.swift */; };
+		ADE05F431C7B235200872D80 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F411C7B235200872D80 /* Event.swift */; };
+		ADE05F481C7B23F600872D80 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F471C7B23F600872D80 /* Activity.swift */; };
+		ADE05F491C7B23F600872D80 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F471C7B23F600872D80 /* Activity.swift */; };
+		ADE05F4C1C7B25A900872D80 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4B1C7B25A900872D80 /* Speaker.swift */; };
+		ADE05F4D1C7B25A900872D80 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4B1C7B25A900872D80 /* Speaker.swift */; };
+		ADE05F4F1C7B268700872D80 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4E1C7B268700872D80 /* Conference.swift */; };
+		ADE05F501C7B268700872D80 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4E1C7B268700872D80 /* Conference.swift */; };
+		ADE05F521C7B2BA800872D80 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F511C7B2BA800872D80 /* Restaurant.swift */; };
+		ADE05F531C7B2BA800872D80 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F511C7B2BA800872D80 /* Restaurant.swift */; };
+		ADE05F581C7B375800872D80 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F571C7B375800872D80 /* Place.swift */; };
+		ADE05F591C7B375800872D80 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F571C7B375800872D80 /* Place.swift */; };
+		ADE05F5E1C7B3F8B00872D80 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F5D1C7B3F8B00872D80 /* Map.swift */; };
+		ADE05F5F1C7B3F8B00872D80 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F5D1C7B3F8B00872D80 /* Map.swift */; };
+		ADE913181C7DA0D2003E9018 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */; };
+		ADE913191C7DB299003E9018 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F441C7B23C200872D80 /* Programme.swift */; };
+		ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F441C7B23C200872D80 /* Programme.swift */; };
+		ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift; sourceTree = "<group>"; };
+		ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FISUTabBar.swift; sourceTree = "<group>"; };
+		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
+		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		ADE05F1B1C7B21F500872D80 /* FISU_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FISU_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE05F201C7B21F600872D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +67,15 @@
 		ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FISU_applicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FISU_applicationTests.swift; sourceTree = "<group>"; };
 		ADE05F381C7B21F600872D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE05F411C7B235200872D80 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ADE05F441C7B23C200872D80 /* Programme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		ADE05F471C7B23F600872D80 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		ADE05F4B1C7B25A900872D80 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		ADE05F4E1C7B268700872D80 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		ADE05F511C7B2BA800872D80 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		ADE05F571C7B375800872D80 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		ADE05F5D1C7B3F8B00872D80 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWithActivities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +99,7 @@
 		ADE05F121C7B21F500872D80 = {
 			isa = PBXGroup;
 			children = (
+				AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */,
 				ADE05F1D1C7B21F500872D80 /* FISU_application */,
 				ADE05F351C7B21F600872D80 /* FISU_applicationTests */,
 				ADE05F1C1C7B21F500872D80 /* Products */,
@@ -82,10 +121,15 @@
 				ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */,
 				ADE05F201C7B21F600872D80 /* ViewController.swift */,
 				ADE05F221C7B21F600872D80 /* Main.storyboard */,
+				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
+				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
+				ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */,
 				ADE05F281C7B21F600872D80 /* Assets.xcassets */,
 				ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */,
 				ADE05F2D1C7B21F600872D80 /* Info.plist */,
 				ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */,
+				ADE05F4A1C7B240E00872D80 /* Model */,
+				ADE913161C7DA08B003E9018 /* Utils */,
 			);
 			path = FISU_application;
 			sourceTree = "<group>";
@@ -97,6 +141,29 @@
 				ADE05F381C7B21F600872D80 /* Info.plist */,
 			);
 			path = FISU_applicationTests;
+			sourceTree = "<group>";
+		};
+		ADE05F4A1C7B240E00872D80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */,
+				ADE05F411C7B235200872D80 /* Event.swift */,
+				ADE05F441C7B23C200872D80 /* Programme.swift */,
+				ADE05F471C7B23F600872D80 /* Activity.swift */,
+				ADE05F4B1C7B25A900872D80 /* Speaker.swift */,
+				ADE05F4E1C7B268700872D80 /* Conference.swift */,
+				ADE05F511C7B2BA800872D80 /* Restaurant.swift */,
+				ADE05F571C7B375800872D80 /* Place.swift */,
+				ADE05F5D1C7B3F8B00872D80 /* Map.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ADE913161C7DA08B003E9018 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */,
+				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
+				ADE05F481C7B23F600872D80 /* Activity.swift in Sources */,
+				ADAAB9001C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */,
+				ADE05F421C7B235200872D80 /* Event.swift in Sources */,
+				ADE05F4F1C7B268700872D80 /* Conference.swift in Sources */,
+				ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
 				ADE05F271C7B21F600872D80 /* FISU_application.xcdatamodeld in Sources */,
+				ADE05F4C1C7B25A900872D80 /* Speaker.swift in Sources */,
+				ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
 				ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */,
 				ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */,
+				ADE05F521C7B2BA800872D80 /* Restaurant.swift in Sources */,
+				ADE913181C7DA0D2003E9018 /* DayWithActivities.swift in Sources */,
+				ADE05F581C7B375800872D80 /* Place.swift in Sources */,
+				ADE05F5E1C7B3F8B00872D80 /* Map.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE913191C7DB299003E9018 /* Programme.swift in Sources */,
+				ADE05F5F1C7B3F8B00872D80 /* Map.swift in Sources */,
+				ADE05F431C7B235200872D80 /* Event.swift in Sources */,
+				ADE05F4D1C7B25A900872D80 /* Speaker.swift in Sources */,
+				ADE05F531C7B2BA800872D80 /* Restaurant.swift in Sources */,
+				ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
+				ADE05F501C7B268700872D80 /* Conference.swift in Sources */,
+				ADAAB9011C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */,
+				ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
+				ADE05F591C7B375800872D80 /* Place.swift in Sources */,
+				ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */,
+				ADE05F491C7B23F600872D80 /* Activity.swift in Sources */,
 				ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +484,7 @@
 				ADE05F3D1C7B21F600872D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADE05F3E1C7B21F600872D80 /* Build configuration list for PBXNativeTarget "FISU_applicationTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +493,7 @@
 				ADE05F401C7B21F600872D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
