@@ -39,10 +39,7 @@ class Activity : NSObject {
     }
     
     func isBefore(activity : Activity) -> Bool {
-        let calendar = NSCalendar.currentCalendar()
-        let day1 = calendar.components([.Day , .Month , .Year, .Hour, .Minute], fromDate: self.begin)
-        let day2 = calendar.components([.Day , .Month , .Year, .Hour, .Minute], fromDate: activity.begin)
-        return (day1.year <= day2.year && day1.month <= day2.month && day1.day <= day2.day && day1.hour <= day2.hour && day1.minute < day2.minute)
+        return self.begin.compare(activity.begin) == NSComparisonResult.OrderedAscending
     }
     
     func beginHourToString() -> String {

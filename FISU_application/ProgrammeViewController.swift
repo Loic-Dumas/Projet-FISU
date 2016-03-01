@@ -44,4 +44,13 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.programme.getAtIndex(section)!.dayToString()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let eventViewController = segue.destinationViewController as! EventViewController
+        
+        eventViewController.titleNavigatonItem.title = "Lama"
+        
+        
+        
+    }
 }

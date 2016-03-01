@@ -14,6 +14,9 @@
 		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
 		ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
+		ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
+		ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
+		ADC973E01C8440B900F969EA /* ActivitySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC973DF1C8440B900F969EA /* ActivitySet.swift */; };
 		ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
 		ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F201C7B21F600872D80 /* ViewController.swift */; };
 		ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F221C7B21F600872D80 /* Main.storyboard */; };
@@ -56,6 +59,8 @@
 		ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FISUTabBar.swift; sourceTree = "<group>"; };
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
+		ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		ADC973DF1C8440B900F969EA /* ActivitySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySet.swift; sourceTree = "<group>"; };
 		ADE05F1B1C7B21F500872D80 /* FISU_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FISU_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE05F201C7B21F600872D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 				ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */,
 				ADE05F201C7B21F600872D80 /* ViewController.swift */,
 				ADE05F221C7B21F600872D80 /* Main.storyboard */,
+				ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */,
 				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
 				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
 				ADAAB8FF1C7C4EFE00EE9FEE /* FISUTabBar.swift */,
@@ -155,6 +161,7 @@
 				ADE05F511C7B2BA800872D80 /* Restaurant.swift */,
 				ADE05F571C7B375800872D80 /* Place.swift */,
 				ADE05F5D1C7B3F8B00872D80 /* Map.swift */,
+				ADC973DF1C8440B900F969EA /* ActivitySet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -271,6 +278,8 @@
 				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
 				ADE05F481C7B23F600872D80 /* Activity.swift in Sources */,
 				ADAAB9001C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */,
+				ADC973E01C8440B900F969EA /* ActivitySet.swift in Sources */,
+				ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */,
 				ADE05F421C7B235200872D80 /* Event.swift in Sources */,
 				ADE05F4F1C7B268700872D80 /* Conference.swift in Sources */,
 				ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
@@ -299,6 +308,7 @@
 				ADE05F501C7B268700872D80 /* Conference.swift in Sources */,
 				ADAAB9011C7C4EFE00EE9FEE /* FISUTabBar.swift in Sources */,
 				ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
+				ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */,
 				ADE05F591C7B375800872D80 /* Place.swift in Sources */,
 				ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */,
 				ADE05F491C7B23F600872D80 /* Activity.swift in Sources */,

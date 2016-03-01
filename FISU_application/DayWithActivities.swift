@@ -21,9 +21,7 @@ class DayWithActivities : NSObject {
             return nil
         }
         self.activities.append(activity)
-        self.activities.sortInPlace({(activity1, activity2) -> Bool in
-            activity1.isBefore(activity2)
-        })
+        self.activities.sortInPlace({ $0.isBefore($1) })
         return self.activities.indexOf(activity)
     }
     
@@ -35,10 +33,7 @@ class DayWithActivities : NSObject {
     }
     
     func isBefore(dayWithActivities : DayWithActivities) -> Bool {
-        let calendar = NSCalendar.currentCalendar()
-        let day1 = calendar.components([.Day , .Month , .Year, .Hour, .Minute], fromDate: self.day)
-        let day2 = calendar.components([.Day , .Month , .Year, .Hour, .Minute], fromDate: dayWithActivities.day)
-        return (day1.year <= day2.year && day1.month <= day2.month && day1.day < day2.day)
+        return self.day.compare(dayWithActivities.day) == NSComparisonResult.OrderedAscending
     }
     
     func isSameDayThan(day: NSDate) -> Bool {
@@ -52,10 +47,18 @@ class DayWithActivities : NSObject {
         return self.activities.indexOf(activity)
     }
     
+    func contains(activity: Activity) -> Bool {
+        return self.activities.contains(activity)
+    }
+    
     func dayToString() -> String {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MMM dd, yyyy"
         let dateString = dateFormatter.stringFromDate(self.day)
         return dateString
+    }
+    
+    func numberOfActivity() -> Int {
+        return self.activities.count
     }
 }
