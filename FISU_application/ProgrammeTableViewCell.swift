@@ -12,6 +12,7 @@ class ProgrammeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var activityName: UILabel!
     @IBOutlet weak var activityBeginning: UILabel!
+    var activity: Activity? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()

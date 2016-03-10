@@ -11,6 +11,7 @@ import UIKit
 class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var programmeTableView: UITableView!
+    
     var programme : Programme = Programme.getTestProgramme()
     
     override func viewDidLoad() {
@@ -36,8 +37,9 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProgrammeTableViewCellId", forIndexPath: indexPath)
         let programmeCell = cell as! ProgrammeTableViewCell
-        programmeCell.activityBeginning.text = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)?.beginHourToString()
-        programmeCell.activityName.text = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)?.name
+        programmeCell.activity = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)
+        programmeCell.activityBeginning.text = programmeCell.activity?.beginHourToString()
+        programmeCell.activityName.text = programmeCell.activity?.name
         return cell
     }
     
@@ -48,9 +50,8 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let eventViewController = segue.destinationViewController as! EventViewController
         
-        eventViewController.titleNavigatonItem.title = "Lama"
+        let cellSender = sender as! ProgrammeTableViewCell
         
-        
-        
+        eventViewController.activity = cellSender.activity
     }
 }

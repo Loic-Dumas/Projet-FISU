@@ -9,23 +9,21 @@
 import Foundation
 
 class Activity : NSObject {
-
-    static var ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
-    static var conf = Activity(name: "Conf intro", place: Place.polytech, begin: "02-22-2016 08:30", end: "02-23-2016 11:30")
-    static var miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
     
     var name : String
     var begin : NSDate
     var end : NSDate
     var place : Place
+    var speakerSet = SpeakerSet()
     
+    /*
     init(name : String, place : Place, begin : NSDate, end : NSDate){
         self.name = name
         self.place = place
         self.begin = begin
         self.end = end
     }
-    
+    */
     init(name : String, place : Place, begin : String, end : String) {
         self.name = name
         self.place = place
@@ -44,8 +42,23 @@ class Activity : NSObject {
     
     func beginHourToString() -> String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "hh:mm"
+        dateFormatter.dateFormat = "HH:mm"
         let dateString = dateFormatter.stringFromDate(self.begin)
         return dateString
     }
+    
+    func endHourToString() -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        let dateString = dateFormatter.stringFromDate(self.end)
+        return dateString
+    }
+    
+    func dayToString() -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MMM dd, yyyy"
+        let dateString = dateFormatter.stringFromDate(self.begin)
+        return dateString
+    }
+   
 }

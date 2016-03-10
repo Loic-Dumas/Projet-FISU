@@ -10,16 +10,28 @@ import UIKit
 
 class EventViewController: UIViewController {
 
+    var activity : Activity? = nil
     @IBOutlet weak var titleNavigatonItem: UINavigationItem!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var hourBeginLabel: UILabel!
     @IBOutlet weak var hourEndLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var speakerTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let activityNotNil = self.activity else {
+            return
+        }
+        self.titleNavigatonItem.title = activityNotNil.name
+        self.dayLabel.text = activityNotNil.dayToString()
+        self.hourBeginLabel.text = activityNotNil.beginHourToString()
+        self.hourEndLabel.text = activityNotNil.endHourToString()
+        self.locationLabel.text = activityNotNil.place.title
+        self.descriptionTextView.text = activityNotNil.name
+        self.descriptionTextView.editable = false
+        
         // Do any additional setup after loading the view.
     }
 

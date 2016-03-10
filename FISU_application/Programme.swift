@@ -33,7 +33,7 @@ class Programme {
         p.addActivity(Activity(name: "Workshops Health/Social Care/Anti-doping", place: Place.polytech, begin: "07-05-2016 14:45", end: "07-05-2016 15:45"))
         p.addActivity(Activity(name: "Coffee break", place: Place.polytech, begin: "07-05-2016 15:45", end: "07-05-2016 16:00"))
         p.addActivity(Activity(name: "Transition to cultural activity", place: Place.polytech, begin: "07-05-2016 16:00", end: "07-05-2016 16:30"))
-        p.addActivity(Activity(name: "Vsit of Montpellier", place: Place.polytech, begin: "07-05-2016 16:30", end: "07-05-2016 18:30"))
+        p.addActivity(Activity(name: "Visit of Montpellier", place: Place.polytech, begin: "07-05-2016 16:30", end: "07-05-2016 18:30"))
         p.addActivity(Activity(name: "Dinner", place: Place.polytech, begin: "07-05-2016 19:45", end: "07-05-2016 21:30"))
         
         p.addActivity(Activity(name: "Plenary session: Leadership", place: Place.polytech, begin: "07-06-2016 09:00", end: "07-06-2016 10:00"))

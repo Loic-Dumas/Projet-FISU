@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Speaker {
+class Speaker : NSObject {
     var name : String
     
     init(name : String) {
