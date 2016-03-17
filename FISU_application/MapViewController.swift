@@ -47,14 +47,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
             }
-            view.pinColor = self.pinColor()
+            view.pinTintColor = self.pinTintColor()
             return view
         }
         return nil
     }
     
-    func pinColor() -> MKPinAnnotationColor  {
-        return .Purple
+    func pinTintColor() -> UIColor  {
+        return UIColor.purpleColor()
     }
     
     override func didReceiveMemoryWarning() {

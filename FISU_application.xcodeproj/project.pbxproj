@@ -39,6 +39,10 @@
 		ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F441C7B23C200872D80 /* Programme.swift */; };
 		ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */; };
 		E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
+		E274E06A1C91DF1500AF8CE9 /* WeeklySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */; };
+		E274E06C1C91E09700AF8CE9 /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */; };
+		E274E06E1C91E0CD00AF8CE9 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06D1C91E0CD00AF8CE9 /* Day.swift */; };
+		E274E0701C91E43900AF8CE9 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06F1C91E43900AF8CE9 /* Hour.swift */; };
 		E2D329731C8F3F1A002ECA56 /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +82,10 @@
 		ADE05F5D1C7B3F8B00872D80 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWithActivities.swift; sourceTree = "<group>"; };
 		E274E0671C91B43500AF8CE9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklySchedule.swift; sourceTree = "<group>"; };
+		E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySchedule.swift; sourceTree = "<group>"; };
+		E274E06D1C91E0CD00AF8CE9 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		E274E06F1C91E43900AF8CE9 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +168,10 @@
 				ADE05F5D1C7B3F8B00872D80 /* Map.swift */,
 				ADC973DF1C8440B900F969EA /* ActivitySet.swift */,
 				E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */,
+				E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */,
+				E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */,
+				E274E06D1C91E0CD00AF8CE9 /* Day.swift */,
+				E274E06F1C91E43900AF8CE9 /* Hour.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -273,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */,
+				E274E06A1C91DF1500AF8CE9 /* WeeklySchedule.swift in Sources */,
+				E274E06C1C91E09700AF8CE9 /* DailySchedule.swift in Sources */,
 				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
 				ADE05F481C7B23F600872D80 /* Activity.swift in Sources */,
 				E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */,
@@ -284,12 +298,14 @@
 				ADE05F4C1C7B25A900872D80 /* Speaker.swift in Sources */,
 				ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
 				E2D329731C8F3F1A002ECA56 /* SpeakerSet.swift in Sources */,
+				E274E06E1C91E0CD00AF8CE9 /* Day.swift in Sources */,
 				ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */,
 				ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */,
 				ADE05F521C7B2BA800872D80 /* Restaurant.swift in Sources */,
 				ADE913181C7DA0D2003E9018 /* DayWithActivities.swift in Sources */,
 				ADE05F581C7B375800872D80 /* Place.swift in Sources */,
 				ADE05F5E1C7B3F8B00872D80 /* Map.swift in Sources */,
+				E274E0701C91E43900AF8CE9 /* Hour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

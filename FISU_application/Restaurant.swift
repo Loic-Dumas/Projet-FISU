@@ -8,6 +8,9 @@
 
 import Foundation
 
-class Restaurant : Place {
+class Restaurant {
+    var name : String
+    var description : String
+    var weekSchedule : 
     
 }
