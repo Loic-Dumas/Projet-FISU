@@ -28,7 +28,7 @@ class EventViewController: UIViewController {
         self.dayLabel.text = activityNotNil.dayToString()
         self.hourBeginLabel.text = activityNotNil.beginHourToString()
         self.hourEndLabel.text = activityNotNil.endHourToString()
-        self.locationLabel.text = activityNotNil.place.title
+        self.locationLabel.text = activityNotNil.locate!.title
         self.descriptionTextView.text = activityNotNil.name
         self.descriptionTextView.editable = false
         

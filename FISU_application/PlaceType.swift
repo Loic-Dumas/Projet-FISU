@@ -1,5 +1,5 @@
 //
-//  DailySchedule.swift
+//  PlaceType.swift
 //  FISU_application
 //
 //  Created by LoïcDumas on 24/03/2016.
@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 
-class DailySchedule: NSManagedObject {
-  
+class PlaceType: NSManagedObject {
 
 }

@@ -1,5 +1,5 @@
 //
-//  DailySchedule.swift
+//  ActivityCategory.swift
 //  FISU_application
 //
 //  Created by LoïcDumas on 24/03/2016.
@@ -10,7 +10,8 @@ import Foundation
 import CoreData
 
 
-class DailySchedule: NSManagedObject {
-  
+class ActivityCategory: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
 
 }

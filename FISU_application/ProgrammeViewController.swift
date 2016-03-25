@@ -12,7 +12,12 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var programmeTableView: UITableView!
     
-    var programme : Programme = Programme.getTestProgramme()
+    var programme : Programme {
+        get {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            return appDelegate.event.programme
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +51,8 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.programme.getAtIndex(section)!.dayToString()
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let eventViewController = segue.destinationViewController as! EventViewController

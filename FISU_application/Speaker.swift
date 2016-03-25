@@ -2,16 +2,15 @@
 //  Speaker.swift
 //  FISU_application
 //
-//  Created by Arnaud ZARAGOZA on 22/02/2016.
+//  Created by LoïcDumas on 24/03/2016.
 //  Copyright © 2016 Arnaud ZARAGOZA. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Speaker : NSObject {
-    var name : String
-    
-    init(name : String) {
-        self.name = name
-    }
+
+class Speaker: NSManagedObject {
+
+
 }

@@ -14,7 +14,6 @@
 		ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
 		ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
 		ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
-		ADC973E01C8440B900F969EA /* ActivitySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC973DF1C8440B900F969EA /* ActivitySet.swift */; };
 		ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
 		ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F201C7B21F600872D80 /* ViewController.swift */; };
 		ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F221C7B21F600872D80 /* Main.storyboard */; };
@@ -22,28 +21,51 @@
 		ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F281C7B21F600872D80 /* Assets.xcassets */; };
 		ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */; };
 		ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */; };
-		ADE05F421C7B235200872D80 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F411C7B235200872D80 /* Event.swift */; };
-		ADE05F431C7B235200872D80 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F411C7B235200872D80 /* Event.swift */; };
-		ADE05F481C7B23F600872D80 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F471C7B23F600872D80 /* Activity.swift */; };
-		ADE05F491C7B23F600872D80 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F471C7B23F600872D80 /* Activity.swift */; };
-		ADE05F4C1C7B25A900872D80 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4B1C7B25A900872D80 /* Speaker.swift */; };
-		ADE05F4D1C7B25A900872D80 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F4B1C7B25A900872D80 /* Speaker.swift */; };
-		ADE05F521C7B2BA800872D80 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F511C7B2BA800872D80 /* Restaurant.swift */; };
-		ADE05F531C7B2BA800872D80 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F511C7B2BA800872D80 /* Restaurant.swift */; };
-		ADE05F581C7B375800872D80 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F571C7B375800872D80 /* Place.swift */; };
-		ADE05F591C7B375800872D80 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F571C7B375800872D80 /* Place.swift */; };
-		ADE05F5E1C7B3F8B00872D80 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F5D1C7B3F8B00872D80 /* Map.swift */; };
-		ADE05F5F1C7B3F8B00872D80 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F5D1C7B3F8B00872D80 /* Map.swift */; };
-		ADE913181C7DA0D2003E9018 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */; };
-		ADE913191C7DB299003E9018 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F441C7B23C200872D80 /* Programme.swift */; };
-		ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F441C7B23C200872D80 /* Programme.swift */; };
-		ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */; };
+		E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */; };
+		E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */; };
+		E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */; };
+		E21A31C51CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */; };
+		E21A31C61CA4044C00B83BC4 /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B51CA4044C00B83BC4 /* DailySchedule.swift */; };
+		E21A31C71CA4044C00B83BC4 /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B51CA4044C00B83BC4 /* DailySchedule.swift */; };
+		E21A31C81CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B61CA4044C00B83BC4 /* Hour+CoreDataProperties.swift */; };
+		E21A31C91CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B61CA4044C00B83BC4 /* Hour+CoreDataProperties.swift */; };
+		E21A31CA1CA4044C00B83BC4 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B71CA4044C00B83BC4 /* Hour.swift */; };
+		E21A31CB1CA4044C00B83BC4 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B71CA4044C00B83BC4 /* Hour.swift */; };
+		E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B81CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift */; };
+		E21A31CD1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B81CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift */; };
+		E21A31CE1CA4044C00B83BC4 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B91CA4044C00B83BC4 /* Speaker.swift */; };
+		E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B91CA4044C00B83BC4 /* Speaker.swift */; };
+		E21A31D01CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BA1CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift */; };
+		E21A31D11CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BA1CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift */; };
+		E21A31D21CA4044C00B83BC4 /* PlaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BB1CA4044C00B83BC4 /* PlaceType.swift */; };
+		E21A31D31CA4044C00B83BC4 /* PlaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BB1CA4044C00B83BC4 /* PlaceType.swift */; };
+		E21A31D41CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BC1CA4044C00B83BC4 /* Place+CoreDataProperties.swift */; };
+		E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BC1CA4044C00B83BC4 /* Place+CoreDataProperties.swift */; };
+		E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BD1CA4044C00B83BC4 /* Place.swift */; };
+		E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BD1CA4044C00B83BC4 /* Place.swift */; };
+		E21A31D81CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BE1CA4044C00B83BC4 /* Activity+CoreDataProperties.swift */; };
+		E21A31D91CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BE1CA4044C00B83BC4 /* Activity+CoreDataProperties.swift */; };
+		E21A31DA1CA4044C00B83BC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BF1CA4044C00B83BC4 /* Activity.swift */; };
+		E21A31DB1CA4044C00B83BC4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31BF1CA4044C00B83BC4 /* Activity.swift */; };
+		E21A31DC1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C01CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift */; };
+		E21A31DD1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C01CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift */; };
+		E21A31DE1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */; };
+		E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */; };
+		E21A31E01CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */; };
+		E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */; };
+		E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
+		E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
+		E21A31E61CA411B600B83BC4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E51CA411B600B83BC4 /* Day.swift */; };
+		E21A31E71CA411B600B83BC4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E51CA411B600B83BC4 /* Day.swift */; };
+		E21A31E91CA41AB900B83BC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E81CA41AB900B83BC4 /* Event.swift */; };
+		E21A31EA1CA41AB900B83BC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E81CA41AB900B83BC4 /* Event.swift */; };
+		E21A31EC1CA41AC900B83BC4 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EB1CA41AC900B83BC4 /* Programme.swift */; };
+		E21A31ED1CA41AC900B83BC4 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EB1CA41AC900B83BC4 /* Programme.swift */; };
+		E21A31EF1CA41B8200B83BC4 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */; };
+		E21A31F01CA41B8200B83BC4 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */; };
+		E21A31F21CA41CDA00B83BC4 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31F11CA41CDA00B83BC4 /* Map.swift */; };
+		E21A31F31CA41CDA00B83BC4 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31F11CA41CDA00B83BC4 /* Map.swift */; };
 		E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
-		E274E06A1C91DF1500AF8CE9 /* WeeklySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */; };
-		E274E06C1C91E09700AF8CE9 /* DailySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */; };
-		E274E06E1C91E0CD00AF8CE9 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06D1C91E0CD00AF8CE9 /* Day.swift */; };
-		E274E0701C91E43900AF8CE9 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E06F1C91E43900AF8CE9 /* Hour.swift */; };
-		E2D329731C8F3F1A002ECA56 /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +83,6 @@
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
-		ADC973DF1C8440B900F969EA /* ActivitySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySet.swift; sourceTree = "<group>"; };
 		ADE05F1B1C7B21F500872D80 /* FISU_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FISU_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE05F201C7B21F600872D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,20 +94,29 @@
 		ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FISU_applicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FISU_applicationTests.swift; sourceTree = "<group>"; };
 		ADE05F381C7B21F600872D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADE05F411C7B235200872D80 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		ADE05F441C7B23C200872D80 /* Programme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
-		ADE05F471C7B23F600872D80 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		ADE05F4B1C7B25A900872D80 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
-		ADE05F511C7B2BA800872D80 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		ADE05F571C7B375800872D80 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		ADE05F5D1C7B3F8B00872D80 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
-		ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWithActivities.swift; sourceTree = "<group>"; };
+		E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisuCoreDataManager.swift; sourceTree = "<group>"; };
+		E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31B51CA4044C00B83BC4 /* DailySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySchedule.swift; sourceTree = "<group>"; };
+		E21A31B61CA4044C00B83BC4 /* Hour+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hour+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31B71CA4044C00B83BC4 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		E21A31B81CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31B91CA4044C00B83BC4 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		E21A31BA1CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaceType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31BB1CA4044C00B83BC4 /* PlaceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceType.swift; sourceTree = "<group>"; };
+		E21A31BC1CA4044C00B83BC4 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31BD1CA4044C00B83BC4 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E21A31BE1CA4044C00B83BC4 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31BF1CA4044C00B83BC4 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		E21A31C01CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActivityCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCategory.swift; sourceTree = "<group>"; };
+		E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E21A31C31CA4044C00B83BC4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E21A31E51CA411B600B83BC4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Day.swift; path = "../../Projet-FISU/FISU_application/Day.swift"; sourceTree = "<group>"; };
+		E21A31E81CA41AB900B83BC4 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "../../Projet-FISU/FISU_application/Event.swift"; sourceTree = "<group>"; };
+		E21A31EB1CA41AC900B83BC4 /* Programme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Programme.swift; path = "../../Projet-FISU/FISU_application/Programme.swift"; sourceTree = "<group>"; };
+		E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayWithActivities.swift; path = "../../Projet-FISU/FISU_application/DayWithActivities.swift"; sourceTree = "<group>"; };
+		E21A31F11CA41CDA00B83BC4 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = "../../Projet-FISU/FISU_application/Map.swift"; sourceTree = "<group>"; };
 		E274E0671C91B43500AF8CE9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklySchedule.swift; sourceTree = "<group>"; };
-		E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySchedule.swift; sourceTree = "<group>"; };
-		E274E06D1C91E0CD00AF8CE9 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		E274E06F1C91E43900AF8CE9 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
-		E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +172,7 @@
 				ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */,
 				ADE05F4A1C7B240E00872D80 /* Model */,
 				ADE913161C7DA08B003E9018 /* Utils */,
+				E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */,
 			);
 			path = FISU_application;
 			sourceTree = "<group>";
@@ -158,20 +189,12 @@
 		ADE05F4A1C7B240E00872D80 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ADE913171C7DA0D2003E9018 /* DayWithActivities.swift */,
-				ADE05F411C7B235200872D80 /* Event.swift */,
-				ADE05F441C7B23C200872D80 /* Programme.swift */,
-				ADE05F471C7B23F600872D80 /* Activity.swift */,
-				ADE05F4B1C7B25A900872D80 /* Speaker.swift */,
-				ADE05F511C7B2BA800872D80 /* Restaurant.swift */,
-				ADE05F571C7B375800872D80 /* Place.swift */,
-				ADE05F5D1C7B3F8B00872D80 /* Map.swift */,
-				ADC973DF1C8440B900F969EA /* ActivitySet.swift */,
-				E2D329721C8F3F1A002ECA56 /* SpeakerSet.swift */,
-				E274E0691C91DF1500AF8CE9 /* WeeklySchedule.swift */,
-				E274E06B1C91E09700AF8CE9 /* DailySchedule.swift */,
-				E274E06D1C91E0CD00AF8CE9 /* Day.swift */,
-				E274E06F1C91E43900AF8CE9 /* Hour.swift */,
+				E21A31E81CA41AB900B83BC4 /* Event.swift */,
+				E21A31EB1CA41AC900B83BC4 /* Programme.swift */,
+				E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */,
+				E21A31F11CA41CDA00B83BC4 /* Map.swift */,
+				E21A31E51CA411B600B83BC4 /* Day.swift */,
+				E21A31E41CA410E300B83BC4 /* CoreData */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -181,6 +204,29 @@
 			children = (
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		E21A31E41CA410E300B83BC4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */,
+				E21A31B51CA4044C00B83BC4 /* DailySchedule.swift */,
+				E21A31B61CA4044C00B83BC4 /* Hour+CoreDataProperties.swift */,
+				E21A31B71CA4044C00B83BC4 /* Hour.swift */,
+				E21A31B81CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift */,
+				E21A31B91CA4044C00B83BC4 /* Speaker.swift */,
+				E21A31BA1CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift */,
+				E21A31BB1CA4044C00B83BC4 /* PlaceType.swift */,
+				E21A31BC1CA4044C00B83BC4 /* Place+CoreDataProperties.swift */,
+				E21A31BD1CA4044C00B83BC4 /* Place.swift */,
+				E21A31BE1CA4044C00B83BC4 /* Activity+CoreDataProperties.swift */,
+				E21A31BF1CA4044C00B83BC4 /* Activity.swift */,
+				E21A31C01CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift */,
+				E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */,
+				E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */,
+				E21A31C31CA4044C00B83BC4 /* Restaurant.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,28 +330,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE9131A1C7DB29A003E9018 /* Programme.swift in Sources */,
-				E274E06A1C91DF1500AF8CE9 /* WeeklySchedule.swift in Sources */,
-				E274E06C1C91E09700AF8CE9 /* DailySchedule.swift in Sources */,
+				E21A31EC1CA41AC900B83BC4 /* Programme.swift in Sources */,
+				E21A31EF1CA41B8200B83BC4 /* DayWithActivities.swift in Sources */,
+				E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
+				E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */,
+				E21A31C81CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
 				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
-				ADE05F481C7B23F600872D80 /* Activity.swift in Sources */,
 				E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */,
-				ADC973E01C8440B900F969EA /* ActivitySet.swift in Sources */,
 				ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */,
-				ADE05F421C7B235200872D80 /* Event.swift in Sources */,
+				E21A31E61CA411B600B83BC4 /* Day.swift in Sources */,
+				E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
+				E21A31F21CA41CDA00B83BC4 /* Map.swift in Sources */,
+				E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
+				E21A31D21CA4044C00B83BC4 /* PlaceType.swift in Sources */,
+				E21A31E91CA41AB900B83BC4 /* Event.swift in Sources */,
+				E21A31DA1CA4044C00B83BC4 /* Activity.swift in Sources */,
+				E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */,
 				ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
 				ADE05F271C7B21F600872D80 /* FISU_application.xcdatamodeld in Sources */,
-				ADE05F4C1C7B25A900872D80 /* Speaker.swift in Sources */,
+				E21A31C61CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
+				E21A31D81CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */,
 				ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
-				E2D329731C8F3F1A002ECA56 /* SpeakerSet.swift in Sources */,
-				E274E06E1C91E0CD00AF8CE9 /* Day.swift in Sources */,
+				E21A31DE1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
+				E21A31D01CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
+				E21A31D41CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
+				E21A31E01CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
 				ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */,
+				E21A31DC1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */,
+				E21A31CE1CA4044C00B83BC4 /* Speaker.swift in Sources */,
+				E21A31CA1CA4044C00B83BC4 /* Hour.swift in Sources */,
 				ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */,
-				ADE05F521C7B2BA800872D80 /* Restaurant.swift in Sources */,
-				ADE913181C7DA0D2003E9018 /* DayWithActivities.swift in Sources */,
-				ADE05F581C7B375800872D80 /* Place.swift in Sources */,
-				ADE05F5E1C7B3F8B00872D80 /* Map.swift in Sources */,
-				E274E0701C91E43900AF8CE9 /* Hour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,17 +367,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE913191C7DB299003E9018 /* Programme.swift in Sources */,
-				ADE05F5F1C7B3F8B00872D80 /* Map.swift in Sources */,
-				ADE05F431C7B235200872D80 /* Event.swift in Sources */,
-				ADE05F4D1C7B25A900872D80 /* Speaker.swift in Sources */,
-				ADE05F531C7B2BA800872D80 /* Restaurant.swift in Sources */,
+				E21A31DD1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */,
+				E21A31DB1CA4044C00B83BC4 /* Activity.swift in Sources */,
+				E21A31F31CA41CDA00B83BC4 /* Map.swift in Sources */,
 				ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
+				E21A31C91CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
+				E21A31E71CA411B600B83BC4 /* Day.swift in Sources */,
+				E21A31CD1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
+				E21A31D11CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
 				ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
+				E21A31EA1CA41AB900B83BC4 /* Event.swift in Sources */,
+				E21A31C71CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
+				E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
+				E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */,
+				E21A31F01CA41B8200B83BC4 /* DayWithActivities.swift in Sources */,
+				E21A31ED1CA41AC900B83BC4 /* Programme.swift in Sources */,
+				E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
+				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
+				E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */,
 				ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */,
-				ADE05F591C7B375800872D80 /* Place.swift in Sources */,
-				ADE9131B1C7DB5C0003E9018 /* DayWithActivities.swift in Sources */,
-				ADE05F491C7B23F600872D80 /* Activity.swift in Sources */,
+				E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
+				E21A31CB1CA4044C00B83BC4 /* Hour.swift in Sources */,
+				E21A31D91CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */,
+				E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */,
+				E21A31C51CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
+				E21A31D31CA4044C00B83BC4 /* PlaceType.swift in Sources */,
 				ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

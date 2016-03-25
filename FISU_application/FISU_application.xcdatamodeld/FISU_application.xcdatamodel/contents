@@ -1,4 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Activity" representedClassName=".Activity" syncable="YES">
+        <attribute name="beginning" attributeType="Date" syncable="YES"/>
+        <attribute name="descriptionActivity" attributeType="String" syncable="YES"/>
+        <attribute name="end" attributeType="Date" syncable="YES"/>
+        <attribute name="going" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityCategory" inverseName="activities" inverseEntity="ActivityCategory" syncable="YES"/>
+        <relationship name="locate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedActivities" inverseEntity="Place" syncable="YES"/>
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="speak" inverseEntity="Speaker" syncable="YES"/>
+    </entity>
+    <entity name="ActivityCategory" representedClassName=".ActivityCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="category" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <entity name="DailySchedule" representedClassName=".DailySchedule" syncable="YES">
+        <attribute name="day" attributeType="Integer 16" minValueString="0" maxValueString="6" defaultValueString="0" syncable="YES"/>
+        <relationship name="closure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hour" inverseName="closure" inverseEntity="Hour" syncable="YES"/>
+        <relationship name="opening" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hour" inverseName="opening" inverseEntity="Hour" syncable="YES"/>
+        <relationship name="openRestaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="open" inverseEntity="Restaurant" syncable="YES"/>
+    </entity>
+    <entity name="Hour" representedClassName=".Hour" syncable="YES">
+        <attribute name="hour" attributeType="Integer 16" minValueString="0" maxValueString="23" defaultValueString="0" syncable="YES"/>
+        <attribute name="minute" attributeType="Integer 16" minValueString="0" maxValueString="59" defaultValueString="0" syncable="YES"/>
+        <relationship name="closure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="closure" inverseEntity="DailySchedule" syncable="YES"/>
+        <relationship name="opening" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="opening" inverseEntity="DailySchedule" syncable="YES"/>
+    </entity>
+    <entity name="Place" representedClassName=".Place" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locatedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="locate" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="locatedRestaurants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="locate" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlaceType" inverseName="places" inverseEntity="PlaceType" syncable="YES"/>
+    </entity>
+    <entity name="PlaceType" representedClassName=".PlaceType" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="places" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="type" inverseEntity="Place" syncable="YES"/>
+    </entity>
+    <entity name="Restaurant" representedClassName=".Restaurant" syncable="YES">
+        <attribute name="descriptionRestaurant" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="locate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedRestaurants" inverseEntity="Place" syncable="YES"/>
+        <relationship name="open" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="openRestaurant" inverseEntity="DailySchedule" syncable="YES"/>
+    </entity>
+    <entity name="Speaker" representedClassName=".Speaker" syncable="YES">
+        <attribute name="descriptionSpeaker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speak" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="speakers" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-5060" positionY="-1180" width="128" height="163"/>
+        <element name="ActivityCategory" positionX="-5256" positionY="-1135" width="128" height="73"/>
+        <element name="DailySchedule" positionX="-4914" positionY="-780" width="128" height="105"/>
+        <element name="Hour" positionX="-4689" positionY="-819" width="128" height="105"/>
+        <element name="Place" positionX="-5168" positionY="-945" width="128" height="150"/>
+        <element name="PlaceType" positionX="-5166" positionY="-750" width="128" height="75"/>
+        <element name="Restaurant" positionX="-4923" positionY="-963" width="128" height="120"/>
+        <element name="Speaker" positionX="-4835" positionY="-1177" width="128" height="88"/>
+    </elements>
 </model>

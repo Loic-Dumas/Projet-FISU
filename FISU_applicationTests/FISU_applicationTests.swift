@@ -22,6 +22,9 @@ class FISU_applicationTests: XCTestCase {
     }
     
     func testProgramme() {
+        
+        
+        
         let programme = Programme()
         let ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
         let miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")

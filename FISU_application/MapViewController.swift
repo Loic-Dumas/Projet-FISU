@@ -20,7 +20,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let initialLocation = CLLocation(latitude: 43.6109200, longitude: 3.8772300)
         self.centerMapOnLocation(initialLocation)
         self.mapKitView.delegate = self
-        self.mapKitView.addAnnotations(Map.getMap().places)
+      //  self.mapKitView.addAnnotations(Map.getMap().places)
     }
     
     func centerMapOnLocation(location: CLLocation) {
@@ -33,7 +33,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // method that gets called for every annotation you add to the map (kind of like
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        if let annotation = annotation as? Place {
+    /*    if let annotation = annotation as? Place {
             let identifier = "pin"
             var view: MKPinAnnotationView
             if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
@@ -50,6 +50,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             view.pinTintColor = self.pinTintColor()
             return view
         }
+        */
         return nil
     }
     

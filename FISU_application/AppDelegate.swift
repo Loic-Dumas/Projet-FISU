@@ -13,9 +13,184 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var event = Event()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.event.programme = Programme.getTestProgramme()
+        
+        
+        //1 set the manageContext
+        let managedContext = self.managedObjectContext
+        
+        //2.1 read and create PlaceTypes
+        let fetchRequestPlaceType = NSFetchRequest(entityName: "PlaceType")
+        
+        do {
+            if let results = try self.managedObjectContext.executeFetchRequest(fetchRequestPlaceType) as? [PlaceType]
+            {
+                self.event.map.placeTypes = results
+            }
+        }
+        catch {
+            fatalError("There was an error fetching the list of PlaceType! \(error)")
+        }
+        
+        
+        //2.2 read and create Place
+        let fetchRequestPlace = NSFetchRequest(entityName: "Place")
+        
+        do {
+            if let results = try self.managedObjectContext.executeFetchRequest(fetchRequestPlace) as? [Place]
+            {
+                self.event.map.places = results
+            }
+        }
+        catch {
+            fatalError("There was an error fetching the list of Place ! \(error)")
+        }
+        
+        
+        //2.3 read and create ActivityCategory
+        let fetchRequestActivityCategory = NSFetchRequest(entityName: "ActivityCategory")
+        
+        do {
+            if let results = try self.managedObjectContext.executeFetchRequest(fetchRequestActivityCategory) as? [ActivityCategory]
+            {
+                self.event.programme.activityCategory = results
+            }
+        }
+        catch {
+            fatalError("There was an error fetching the list of Place ! \(error)")
+        }
+        
+        
+        
+        //2.4 read and create activities
+        let fetchRequestActivity = NSFetchRequest(entityName: "Activity")
+        
+        var activities = [Activity]()
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequestActivity)
+            activities = results as! [Activity]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        for activity in activities {
+            self.event.programme.addActivity(activity)
+        }
+        
+        
+        
+        
+        
+        
+//        //2.4 read and create activities
+//        let fetchRequest = NSFetchRequest(entityName: "Activity")
+//        
+//        var activities = [NSManagedObject]()
+//        do {
+//            let results = try managedContext.executeFetchRequest(fetchRequest)
+//            activities = results as! [NSManagedObject]
+//        } catch let error as NSError {
+//            print("Could not fetch \(error), \(error.userInfo)")
+//        }
+        if(activities.count <= 0) {
+            print("Nothing ! \nSo we add some default datas !")
+            //2.1 create PlaceType
+            let entityPlaceType =  NSEntityDescription.entityForName("PlaceType", inManagedObjectContext:managedContext)
+            
+            let placeType1 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: managedContext)
+            let placeType2 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: managedContext)
+            let placeType3 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: managedContext)
+            placeType1.setValue("Park", forKey: "name")
+            placeType2.setValue("Conference place", forKey: "name")
+            placeType3.setValue("Miscellaneous", forKey: "name")
+            
+            print("PlaceType added")
+            
+            
+            //2.2 create PlaceType
+            let entityPlace =  NSEntityDescription.entityForName("Place", inManagedObjectContext:managedContext)
+            
+            let place1 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: managedContext)
+            let place2 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: managedContext)
+            let place3 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: managedContext)
+            
+            place1.setValue("Polytech", forKey: "title")
+            place1.setValue("Engineering School", forKey: "subTitle")
+            place1.setValue(43.632726, forKey: "latitude")
+            place1.setValue(3.862590, forKey: "longitude")
+            place1.setValue(placeType2, forKey: "type")
+            
+            place2.setValue("Comédie", forKey: "title")
+            place2.setValue("Famous place in Montpellier", forKey: "subTitle")
+            place2.setValue(43.608957, forKey: "latitude")
+            place2.setValue(3.880332, forKey: "longitude")
+            place2.setValue(placeType3, forKey: "type")
+            
+            place3.setValue("Palce du Peyrou", forKey: "title")
+            place3.setValue("Nice garden", forKey: "subTitle")
+            place3.setValue(43.611304, forKey: "latitude")
+            place3.setValue(3.870713, forKey: "longitude")
+            place3.setValue(placeType1, forKey: "type")
+            
+            print("Place added")
+            
+            
+            //2.3 create ActivityCategory
+            let entityActivityCategory =  NSEntityDescription.entityForName("ActivityCategory", inManagedObjectContext:managedContext)
+            
+            let activityCategory1 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: managedContext)
+            let activityCategory2 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: managedContext)
+            let activityCategory3 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: managedContext)
+            activityCategory1.setValue("Sport", forKey: "name")
+            activityCategory2.setValue("Conference", forKey: "name")
+            activityCategory3.setValue("Miscellaneous", forKey: "name")
+            
+            print("ActivityCategory added")
+            
+            
+            //2.4 Create the activity
+            let entityActivity =  NSEntityDescription.entityForName("Activity", inManagedObjectContext:managedContext)
+            
+            let activity1 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
+            let activity2 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
+            let activity3 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
+            
+            activity1.setValue("Welcoming", forKey: "name")
+            activity1.setValue("This description is fort the welcoming, LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia", forKey: "descriptionActivity")
+            activity1.setValue(NSDate(), forKey: "beginning")
+            activity1.setValue(NSDate(), forKey: "end")
+            activity1.setValue(place1, forKey: "locate")
+            activity1.setValue(activityCategory1, forKey: "category")
+            
+            activity2.setValue("Free time", forKey: "name")
+            activity2.setValue("Discover a famus place in Montpellier.", forKey: "descriptionActivity")
+            activity2.setValue(NSDate(), forKey: "beginning")
+            activity2.setValue(NSDate(), forKey: "end")
+            activity2.setValue(place2, forKey: "locate")
+            activity1.setValue(activityCategory2, forKey: "category")
+            
+            activity3.setValue("Running", forKey: "name")
+            activity3.setValue("A short run to start the FISU.", forKey: "descriptionActivity")
+            activity3.setValue(NSDate(), forKey: "beginning")
+            activity3.setValue(NSDate(), forKey: "end")
+            activity3.setValue(place3, forKey: "locate")
+            activity1.setValue(activityCategory3, forKey: "category")
+    
+            print("activity added")
+        
+            
+            //3 Save
+            do {
+                try managedContext.save()
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+        }
         return true
     }
 
@@ -60,8 +235,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
+        
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
+        
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("tmp9.sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
@@ -78,7 +255,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
             abort()
         }
-        
+
         return coordinator
     }()
 

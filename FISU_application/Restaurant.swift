@@ -2,15 +2,16 @@
 //  Restaurant.swift
 //  FISU_application
 //
-//  Created by Arnaud ZARAGOZA on 22/02/2016.
+//  Created by LoïcDumas on 24/03/2016.
 //  Copyright © 2016 Arnaud ZARAGOZA. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Restaurant {
-    var name : String
-    var description : String
-    var weekSchedule : 
-    
+
+class Restaurant: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
+
 }
