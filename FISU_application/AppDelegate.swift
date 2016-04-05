@@ -87,20 +87,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-//        //2.4 read and create activities
-//        let fetchRequest = NSFetchRequest(entityName: "Activity")
-//        
-//        var activities = [NSManagedObject]()
-//        do {
-//            let results = try managedContext.executeFetchRequest(fetchRequest)
-//            activities = results as! [NSManagedObject]
-//        } catch let error as NSError {
-//            print("Could not fetch \(error), \(error.userInfo)")
-//        }
+        
+        
+        
+        
         if(activities.count <= 0) {
             print("Nothing ! \nSo we add some default datas !")
             //2.1 create PlaceType
             let entityPlaceType =  NSEntityDescription.entityForName("PlaceType", inManagedObjectContext:managedContext)
+            
             
             let placeType1 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: managedContext)
             let placeType2 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: managedContext)
@@ -112,7 +107,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("PlaceType added")
             
             
-            //2.2 create PlaceType
+            //2.2 create Place
             let entityPlace =  NSEntityDescription.entityForName("Place", inManagedObjectContext:managedContext)
             
             let place1 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: managedContext)
@@ -153,12 +148,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("ActivityCategory added")
             
             
-            //2.4 Create the activity
+            //2.4 Create the Activity
             let entityActivity =  NSEntityDescription.entityForName("Activity", inManagedObjectContext:managedContext)
             
             let activity1 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
             let activity2 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
             let activity3 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: managedContext)
+            
             
             activity1.setValue("Welcoming", forKey: "name")
             activity1.setValue("This description is fort the welcoming, LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia", forKey: "descriptionActivity")
@@ -166,6 +162,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             activity1.setValue(NSDate(), forKey: "end")
             activity1.setValue(place1, forKey: "locate")
             activity1.setValue(activityCategory1, forKey: "category")
+            
             
             activity2.setValue("Free time", forKey: "name")
             activity2.setValue("Discover a famus place in Montpellier.", forKey: "descriptionActivity")

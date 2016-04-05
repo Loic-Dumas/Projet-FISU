@@ -11,6 +11,30 @@ import XCTest
 
 class FISU_applicationTests: XCTestCase {
     
+    static var montagne = FISU_applicationTests.getMontagne()
+    static var com = FISU_applicationTests.getCom()
+    
+    static func getMontagne() -> Place {
+        let place = Place()
+        place.title = "Montagne"
+        place.latitude = 40
+        place.longitude = 2
+        place.subTitle = "Montagne description"
+        
+        return place
+    }
+    
+    static func getCom() -> Place {
+        let place = Place()
+        place.title = "Comedie"
+        place.latitude = 43.6109200
+        place.longitude = 3.8772300
+        place.subTitle = "Place de la Comédie"
+        
+        return place
+    }
+  
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,9 +50,9 @@ class FISU_applicationTests: XCTestCase {
         
         
         let programme = Programme()
-        let ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
-        let miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
-        let rando = Activity(name: "Rando", place: Place.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        let ski = Activity(name: "Ski", place: FISU_applicationTests.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
+        let miam = Activity(name: "Repas", place: FISU_applicationTests.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
+        let rando = Activity(name: "Rando", place: FISU_applicationTests.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
         
         
         XCTAssertEqual(programme.numberOfDays(), 0)
@@ -76,7 +100,7 @@ class FISU_applicationTests: XCTestCase {
         XCTAssertEqual(programme.getAtDate(ski.begin, index: 2), miam)
         
         // a new day
-        let randoDeFin = Activity(name: "Rando d'adieux", place: Place.com, begin: "02-24-2016 10:30", end: "02-24-2016 11:00")
+        let randoDeFin = Activity(name: "Rando d'adieux", place: FISU_applicationTests.com, begin: "02-24-2016 10:30", end: "02-24-2016 11:00")
         programme.addActivity(randoDeFin)
         XCTAssertEqual(programme.numberOfDays(), 2)
         XCTAssertEqual(programme.numberOfActivityForDay(randoDeFin.begin), 1)
@@ -95,7 +119,7 @@ class FISU_applicationTests: XCTestCase {
         XCTAssertEqual(programme.getAtDate(ski.begin, index: 2), miam)
         
         // add activity before all
-        let randoDeDebut = Activity(name: "Rando de début", place: Place.com, begin: "02-22-2016 10:30", end: "02-22-2016 11:00")
+        let randoDeDebut = Activity(name: "Rando de début", place: FISU_applicationTests.com, begin: "02-22-2016 10:30", end: "02-22-2016 11:00")
         programme.addActivity(randoDeDebut)
         XCTAssertEqual(programme.numberOfDays(), 3)
         XCTAssertEqual(programme.numberOfActivityForDay(randoDeDebut.begin), 1)
@@ -133,10 +157,10 @@ class FISU_applicationTests: XCTestCase {
         
         let dayWithActivities = DayWithActivities(day: date)
         
-        let ski = Activity(name: "Ski", place: Place.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
+        let ski = Activity(name: "Ski", place: FISU_applicationTests.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
         //let conf = Activity(name: "Conf intro", place: Place.polytech, begin: "02-22-2016 08:30", end: "02-23-2016 11:30")
-        let miam = Activity(name: "Repas", place: Place.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
-        let rando = Activity(name: "Rando", place: Place.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        let miam = Activity(name: "Repas", place: FISU_applicationTests.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
+        let rando = Activity(name: "Rando", place: FISU_applicationTests.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
         
         XCTAssertEqual(dayWithActivities.numberOfActivity(), 0)
         
@@ -166,8 +190,8 @@ class FISU_applicationTests: XCTestCase {
     }
     
     func testExample() {
-        let ac = Activity.ski
-        print(ac.begin)
+        //let ac = Activity.ski
+        //print(ac.begin)
         
     }
     

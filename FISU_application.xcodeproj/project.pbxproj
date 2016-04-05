@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD71E33C1CB39D8A005E784E /* 1721692.png in Resources */ = {isa = PBXBuildFile; fileRef = AD71E33B1CB39D8A005E784E /* 1721692.png */; };
+		AD71E33D1CB39D8A005E784E /* 1721692.png in Resources */ = {isa = PBXBuildFile; fileRef = AD71E33B1CB39D8A005E784E /* 1721692.png */; };
+		AD71E33F1CB39F88005E784E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E33E1CB39F88005E784E /* Event.swift */; };
+		AD71E3401CB39F88005E784E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E33E1CB39F88005E784E /* Event.swift */; };
+		AD71E3421CB39FC0005E784E /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3411CB39FC0005E784E /* Programme.swift */; };
+		AD71E3431CB39FC0005E784E /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3411CB39FC0005E784E /* Programme.swift */; };
+		AD71E3451CB39FCB005E784E /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3441CB39FCB005E784E /* DayWithActivities.swift */; };
+		AD71E3461CB39FCB005E784E /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3441CB39FCB005E784E /* DayWithActivities.swift */; };
+		AD71E3481CB39FD2005E784E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3471CB39FD2005E784E /* Day.swift */; };
+		AD71E3491CB39FD2005E784E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3471CB39FD2005E784E /* Day.swift */; };
+		AD71E34B1CB39FDD005E784E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34A1CB39FDD005E784E /* Map.swift */; };
+		AD71E34C1CB39FDD005E784E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34A1CB39FDD005E784E /* Map.swift */; };
 		AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */; };
 		ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
@@ -55,16 +67,6 @@
 		E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */; };
 		E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
 		E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
-		E21A31E61CA411B600B83BC4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E51CA411B600B83BC4 /* Day.swift */; };
-		E21A31E71CA411B600B83BC4 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E51CA411B600B83BC4 /* Day.swift */; };
-		E21A31E91CA41AB900B83BC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E81CA41AB900B83BC4 /* Event.swift */; };
-		E21A31EA1CA41AB900B83BC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31E81CA41AB900B83BC4 /* Event.swift */; };
-		E21A31EC1CA41AC900B83BC4 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EB1CA41AC900B83BC4 /* Programme.swift */; };
-		E21A31ED1CA41AC900B83BC4 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EB1CA41AC900B83BC4 /* Programme.swift */; };
-		E21A31EF1CA41B8200B83BC4 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */; };
-		E21A31F01CA41B8200B83BC4 /* DayWithActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */; };
-		E21A31F21CA41CDA00B83BC4 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31F11CA41CDA00B83BC4 /* Map.swift */; };
-		E21A31F31CA41CDA00B83BC4 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31F11CA41CDA00B83BC4 /* Map.swift */; };
 		E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD71E33B1CB39D8A005E784E /* 1721692.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1721692.png; sourceTree = "<group>"; };
+		AD71E33E1CB39F88005E784E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AD71E3411CB39FC0005E784E /* Programme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		AD71E3441CB39FCB005E784E /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWithActivities.swift; sourceTree = "<group>"; };
+		AD71E3471CB39FD2005E784E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		AD71E34A1CB39FDD005E784E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift; sourceTree = "<group>"; };
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
@@ -111,11 +119,6 @@
 		E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCategory.swift; sourceTree = "<group>"; };
 		E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E21A31C31CA4044C00B83BC4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		E21A31E51CA411B600B83BC4 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Day.swift; path = "../../Projet-FISU/FISU_application/Day.swift"; sourceTree = "<group>"; };
-		E21A31E81CA41AB900B83BC4 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "../../Projet-FISU/FISU_application/Event.swift"; sourceTree = "<group>"; };
-		E21A31EB1CA41AC900B83BC4 /* Programme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Programme.swift; path = "../../Projet-FISU/FISU_application/Programme.swift"; sourceTree = "<group>"; };
-		E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayWithActivities.swift; path = "../../Projet-FISU/FISU_application/DayWithActivities.swift"; sourceTree = "<group>"; };
-		E21A31F11CA41CDA00B83BC4 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = "../../Projet-FISU/FISU_application/Map.swift"; sourceTree = "<group>"; };
 		E274E0671C91B43500AF8CE9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */,
+				E212B38A1CA5BF5200910947 /* Resources */,
 				ADE05F1D1C7B21F500872D80 /* FISU_application */,
 				ADE05F351C7B21F600872D80 /* FISU_applicationTests */,
 				ADE05F1C1C7B21F500872D80 /* Products */,
@@ -189,11 +193,11 @@
 		ADE05F4A1C7B240E00872D80 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E21A31E81CA41AB900B83BC4 /* Event.swift */,
-				E21A31EB1CA41AC900B83BC4 /* Programme.swift */,
-				E21A31EE1CA41B8200B83BC4 /* DayWithActivities.swift */,
-				E21A31F11CA41CDA00B83BC4 /* Map.swift */,
-				E21A31E51CA411B600B83BC4 /* Day.swift */,
+				AD71E33E1CB39F88005E784E /* Event.swift */,
+				AD71E3411CB39FC0005E784E /* Programme.swift */,
+				AD71E3441CB39FCB005E784E /* DayWithActivities.swift */,
+				AD71E34A1CB39FDD005E784E /* Map.swift */,
+				AD71E3471CB39FD2005E784E /* Day.swift */,
 				E21A31E41CA410E300B83BC4 /* CoreData */,
 			);
 			name = Model;
@@ -204,6 +208,14 @@
 			children = (
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		E212B38A1CA5BF5200910947 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD71E33B1CB39D8A005E784E /* 1721692.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E21A31E41CA410E300B83BC4 /* CoreData */ = {
@@ -312,6 +324,7 @@
 			files = (
 				ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */,
 				ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */,
+				AD71E33C1CB39D8A005E784E /* 1721692.png in Resources */,
 				ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD71E33D1CB39D8A005E784E /* 1721692.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,20 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21A31EC1CA41AC900B83BC4 /* Programme.swift in Sources */,
-				E21A31EF1CA41B8200B83BC4 /* DayWithActivities.swift in Sources */,
+				AD71E3451CB39FCB005E784E /* DayWithActivities.swift in Sources */,
 				E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
+				AD71E34B1CB39FDD005E784E /* Map.swift in Sources */,
 				E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */,
 				E21A31C81CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
 				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
 				E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */,
 				ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */,
-				E21A31E61CA411B600B83BC4 /* Day.swift in Sources */,
+				AD71E3421CB39FC0005E784E /* Programme.swift in Sources */,
 				E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
-				E21A31F21CA41CDA00B83BC4 /* Map.swift in Sources */,
 				E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
 				E21A31D21CA4044C00B83BC4 /* PlaceType.swift in Sources */,
-				E21A31E91CA41AB900B83BC4 /* Event.swift in Sources */,
+				AD71E33F1CB39F88005E784E /* Event.swift in Sources */,
 				E21A31DA1CA4044C00B83BC4 /* Activity.swift in Sources */,
 				E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */,
 				ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
@@ -354,6 +367,7 @@
 				E21A31DE1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31D01CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
 				E21A31D41CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
+				AD71E3481CB39FD2005E784E /* Day.swift in Sources */,
 				E21A31E01CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
 				ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */,
 				E21A31DC1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */,
@@ -369,22 +383,22 @@
 			files = (
 				E21A31DD1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */,
 				E21A31DB1CA4044C00B83BC4 /* Activity.swift in Sources */,
-				E21A31F31CA41CDA00B83BC4 /* Map.swift in Sources */,
 				ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
 				E21A31C91CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
-				E21A31E71CA411B600B83BC4 /* Day.swift in Sources */,
+				AD71E3461CB39FCB005E784E /* DayWithActivities.swift in Sources */,
 				E21A31CD1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
 				E21A31D11CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
 				ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
-				E21A31EA1CA41AB900B83BC4 /* Event.swift in Sources */,
+				AD71E34C1CB39FDD005E784E /* Map.swift in Sources */,
+				AD71E3401CB39F88005E784E /* Event.swift in Sources */,
 				E21A31C71CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
 				E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */,
-				E21A31F01CA41B8200B83BC4 /* DayWithActivities.swift in Sources */,
-				E21A31ED1CA41AC900B83BC4 /* Programme.swift in Sources */,
+				AD71E3431CB39FC0005E784E /* Programme.swift in Sources */,
 				E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
 				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
 				E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */,
+				AD71E3491CB39FD2005E784E /* Day.swift in Sources */,
 				ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */,
 				E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
 				E21A31CB1CA4044C00B83BC4 /* Hour.swift in Sources */,
