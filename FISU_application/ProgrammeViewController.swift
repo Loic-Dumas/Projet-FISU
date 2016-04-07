@@ -15,7 +15,7 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     var programme : Programme {
         get {
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            return appDelegate.event.programme
+            return appDelegate.event!.programme
         }
     }
     

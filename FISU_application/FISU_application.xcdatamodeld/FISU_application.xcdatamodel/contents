@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="Activity" representedClassName=".Activity" syncable="YES">
         <attribute name="beginning" attributeType="Date" syncable="YES"/>
         <attribute name="descriptionActivity" attributeType="String" syncable="YES"/>
-        <attribute name="end" attributeType="Date" syncable="YES"/>
-        <attribute name="going" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="ending" attributeType="Date" syncable="YES"/>
+        <attribute name="going" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityCategory" inverseName="activities" inverseEntity="ActivityCategory" syncable="YES"/>
-        <relationship name="locate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedActivities" inverseEntity="Place" syncable="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityCategory" inverseName="activities" inverseEntity="ActivityCategory" syncable="YES"/>
+        <relationship name="location" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedActivities" inverseEntity="Place" syncable="YES"/>
         <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="speak" inverseEntity="Speaker" syncable="YES"/>
     </entity>
     <entity name="ActivityCategory" representedClassName=".ActivityCategory" syncable="YES">
@@ -31,7 +31,7 @@
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="locatedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="locate" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="locatedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="location" inverseEntity="Activity" syncable="YES"/>
         <relationship name="locatedRestaurants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="locate" inverseEntity="Restaurant" syncable="YES"/>
         <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlaceType" inverseName="places" inverseEntity="PlaceType" syncable="YES"/>
     </entity>

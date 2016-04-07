@@ -11,7 +11,8 @@ import Foundation
 class Programme {
 
     static func getTestProgramme() -> Programme {
-        let p = Programme()
+        let coreDataManager = FisuCoreDataManager()
+        let p = Programme(coreDataManager: coreDataManager)
         /*
         p.addActivity(Activity(name: "Openning ceremony", place: Place.polytech, begin: "07-04-2016 09:00", end: "07-04-2016 12:30"))
         p.addActivity(Activity(name: "Lunch", place: Place.polytech, begin: "07-04-2016 12:30", end: "07-04-2016 13:45"))
@@ -44,13 +45,17 @@ class Programme {
     
     private var activityDays = [DayWithActivities]()
     var activityCategory = [ActivityCategory]()
+    var coreDataManager: FisuCoreDataManager
     
+    init(coreDataManager : FisuCoreDataManager) {
+        self.coreDataManager = coreDataManager
+    }
     
     func addActivity(activity : Activity) -> (dateIndex: Int, ActivityIndex: Int)? {
 
-        var activityDay: DayWithActivities? = self.getActivityDay(activity.beginning!)
+        var activityDay: DayWithActivities? = self.getActivityDay(activity.begin)
         guard activityDay != nil else {
-            let day = activity.beginning!.copy() as! NSDate
+            let day = activity.begin.copy() as! NSDate
             activityDay = DayWithActivities(day: day)
             activityDay!.addActivity(activity)
             self.activityDays.append(activityDay!)
@@ -68,7 +73,13 @@ class Programme {
 
         return (dateIndex!, activityIndex!)
     }
-    
+    /*
+    func buildActivity(name name : String, descriptionActivity : String, begin : NSDate, end : NSDate, going : Bool, category : ActivityCategory, location : Place, speakerSet : SpeakerSet) -> Activity {
+        var newActivity = self.coreDataManager.buildActivity(name: name, descriptionActivity : descriptionActivity, begin : begin, end : end, going : going, category : category, location : location, speakerSet : speakerSet)
+        
+        return newActivity
+    }
+    */
     func getActivityDay(day: NSDate) -> DayWithActivities? {
         var activityDay: DayWithActivities? = nil
         for activityDayTemp in self.activityDays {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventViewController: UIViewController {
+class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     var activity : Activity? = nil
     @IBOutlet weak var titleNavigatonItem: UINavigationItem!
@@ -21,6 +21,8 @@ class EventViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.speakerTableView.delegate = self
+        self.speakerTableView.dataSource = self
         guard let activityNotNil = self.activity else {
             return
         }
@@ -28,7 +30,7 @@ class EventViewController: UIViewController {
         self.dayLabel.text = activityNotNil.dayToString()
         self.hourBeginLabel.text = activityNotNil.beginHourToString()
         self.hourEndLabel.text = activityNotNil.endHourToString()
-        self.locationLabel.text = activityNotNil.locate!.title
+        self.locationLabel.text = activityNotNil.location!.title
         self.descriptionTextView.text = activityNotNil.name
         self.descriptionTextView.editable = false
         
@@ -40,7 +42,28 @@ class EventViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var nbRow = 0
+        nbRow = (self.activity?.speakers?.count)!
+        return nbRow
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SpeakerTableViewCellId", forIndexPath: indexPath)
+        let speakerCell = cell as! SpeakerTableViewCell
+        
+        speakerCell.speaker = self.activity?.speakerSet.getAtIndex(indexPath.row)
+        speakerCell.speakerNameLabel.text = speakerCell.speaker!.name
+        return cell
+    }
+    
+    
     
     // MARK: - Navigation
 
@@ -48,7 +71,11 @@ class EventViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        print("Coucou")
+        let speakerViewController = segue.destinationViewController as! SpeakerViewController
+        
+        let cellSender = sender as! SpeakerTableViewCell
+        
+        speakerViewController.speaker = cellSender.speaker
     }
     
     override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {

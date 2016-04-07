@@ -2,7 +2,7 @@
 //  Activity+CoreDataProperties.swift
 //  FISU_application
 //
-//  Created by LoïcDumas on 24/03/2016.
+//  Created by Arnaud ZARAGOZA on 05/04/2016.
 //  Copyright © 2016 Arnaud ZARAGOZA. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,13 +13,14 @@ import Foundation
 import CoreData
 
 extension Activity {
-
-    @NSManaged var beginning: NSDate?
+    
+    @NSManaged var beginning: NSTimeInterval
     @NSManaged var descriptionActivity: String?
-    @NSManaged var end: NSDate?
-    @NSManaged var going: NSNumber?
+    @NSManaged var ending: NSTimeInterval
+    @NSManaged var going: Bool
     @NSManaged var name: String?
-    @NSManaged var locate: Place?
+    @NSManaged var category: ActivityCategory?
+    @NSManaged var location: Place?
     @NSManaged var speakers: NSSet?
-
+    
 }

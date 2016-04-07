@@ -19,6 +19,8 @@
 		AD71E3491CB39FD2005E784E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E3471CB39FD2005E784E /* Day.swift */; };
 		AD71E34B1CB39FDD005E784E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34A1CB39FDD005E784E /* Map.swift */; };
 		AD71E34C1CB39FDD005E784E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34A1CB39FDD005E784E /* Map.swift */; };
+		AD71E34E1CB3A2A0005E784E /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */; };
+		AD71E34F1CB3A2A0005E784E /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */; };
 		AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */; };
 		ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
@@ -68,6 +70,10 @@
 		E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
 		E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
 		E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
+		E2AD35631CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */; };
+		E2AD35641CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */; };
+		E2AD35661CB6C21100891CF2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */; };
+		E2AD35671CB6C21100891CF2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,7 @@
 		AD71E3441CB39FCB005E784E /* DayWithActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayWithActivities.swift; sourceTree = "<group>"; };
 		AD71E3471CB39FD2005E784E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		AD71E34A1CB39FDD005E784E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerSet.swift; sourceTree = "<group>"; };
 		AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift; sourceTree = "<group>"; };
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +127,8 @@
 		E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E21A31C31CA4044C00B83BC4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		E274E0671C91B43500AF8CE9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
+		E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,19 +173,21 @@
 			isa = PBXGroup;
 			children = (
 				ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */,
+				E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */,
+				E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */,
 				ADE05F201C7B21F600872D80 /* ViewController.swift */,
 				ADE05F221C7B21F600872D80 /* Main.storyboard */,
 				ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */,
 				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
 				E274E0671C91B43500AF8CE9 /* MapViewController.swift */,
 				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
+				E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */,
 				ADE05F281C7B21F600872D80 /* Assets.xcassets */,
 				ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */,
 				ADE05F2D1C7B21F600872D80 /* Info.plist */,
 				ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */,
 				ADE05F4A1C7B240E00872D80 /* Model */,
 				ADE913161C7DA08B003E9018 /* Utils */,
-				E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */,
 			);
 			path = FISU_application;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				AD71E3441CB39FCB005E784E /* DayWithActivities.swift */,
 				AD71E34A1CB39FDD005E784E /* Map.swift */,
 				AD71E3471CB39FD2005E784E /* Day.swift */,
+				AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */,
 				E21A31E41CA410E300B83BC4 /* CoreData */,
 			);
 			name = Model;
@@ -347,6 +359,7 @@
 				AD71E3451CB39FCB005E784E /* DayWithActivities.swift in Sources */,
 				E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
 				AD71E34B1CB39FDD005E784E /* Map.swift in Sources */,
+				E2AD35631CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */,
 				E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */,
 				E21A31C81CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
 				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
@@ -355,6 +368,7 @@
 				AD71E3421CB39FC0005E784E /* Programme.swift in Sources */,
 				E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
 				E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
+				E2AD35661CB6C21100891CF2 /* SpeakerViewController.swift in Sources */,
 				E21A31D21CA4044C00B83BC4 /* PlaceType.swift in Sources */,
 				AD71E33F1CB39F88005E784E /* Event.swift in Sources */,
 				E21A31DA1CA4044C00B83BC4 /* Activity.swift in Sources */,
@@ -366,6 +380,7 @@
 				ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
 				E21A31DE1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31D01CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
+				AD71E34E1CB3A2A0005E784E /* SpeakerSet.swift in Sources */,
 				E21A31D41CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
 				AD71E3481CB39FD2005E784E /* Day.swift in Sources */,
 				E21A31E01CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
@@ -387,14 +402,17 @@
 				E21A31C91CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
 				AD71E3461CB39FCB005E784E /* DayWithActivities.swift in Sources */,
 				E21A31CD1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
+				E2AD35671CB6C21100891CF2 /* SpeakerViewController.swift in Sources */,
 				E21A31D11CA4044C00B83BC4 /* PlaceType+CoreDataProperties.swift in Sources */,
 				ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
 				AD71E34C1CB39FDD005E784E /* Map.swift in Sources */,
 				AD71E3401CB39F88005E784E /* Event.swift in Sources */,
 				E21A31C71CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
+				AD71E34F1CB3A2A0005E784E /* SpeakerSet.swift in Sources */,
 				E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */,
 				AD71E3431CB39FC0005E784E /* Programme.swift in Sources */,
+				E2AD35641CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */,
 				E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
 				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
 				E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */,

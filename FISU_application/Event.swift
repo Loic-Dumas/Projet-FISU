@@ -9,7 +9,11 @@
 import Foundation
 
 class Event {
-    var programme : Programme = Programme()
+    var programme : Programme
     var restaurants : [Restaurant] = [Restaurant]()
     var map : Map = Map()
+    
+    init(coreDataManager : FisuCoreDataManager) {
+        self.programme = Programme(coreDataManager : coreDataManager)
+    }
 }
