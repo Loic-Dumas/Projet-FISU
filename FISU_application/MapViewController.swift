@@ -14,13 +14,26 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapKitView: MKMapView!
+
+    private var mapPrivate : Map? = nil
+
+    
+    var map : Map {
+        get {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            return appDelegate.event!.map
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let initialLocation = CLLocation(latitude: 43.6109200, longitude: 3.8772300)
         self.centerMapOnLocation(initialLocation)
         self.mapKitView.delegate = self
-      //  self.mapKitView.addAnnotations(Map.getMap().places)
+        
+        self.mapKitView.addAnnotations(map.placesAnnotation)
+     
     }
     
     func centerMapOnLocation(location: CLLocation) {
@@ -30,10 +43,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.mapKitView.setRegion(coordinateRegion, animated: true)
     }
     
-    // method that gets called for every annotation you add to the map (kind of like
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-    /*    if let annotation = annotation as? Place {
+        if let annotation = annotation as? PlaceAnnotation {
             let identifier = "pin"
             var view: MKPinAnnotationView
             if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
@@ -47,16 +59,29 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
             }
-            view.pinTintColor = self.pinTintColor()
+            
+            view.pinTintColor = self.pinTintColor(annotation.type)
             return view
         }
-        */
+        
         return nil
     }
     
-    func pinTintColor() -> UIColor  {
-        return UIColor.purpleColor()
+    func pinTintColor(type : String) -> UIColor  {
+        var color : UIColor
+        switch type {
+        case "Park":
+            color = UIColor.greenColor()
+        case "Restaurant":
+            color = UIColor.purpleColor()
+        case "River":
+            color = UIColor.blueColor()
+        default:
+            color = UIColor.redColor()
+        }
+        return color
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

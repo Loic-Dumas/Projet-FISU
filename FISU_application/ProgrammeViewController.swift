@@ -45,6 +45,14 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         programmeCell.activity = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)
         programmeCell.activityBeginning.text = programmeCell.activity?.beginHourToString()
         programmeCell.activityName.text = programmeCell.activity?.name
+        switch programmeCell.activity!.category!.name! {
+        case "Miscellaneous":
+            programmeCell.iconImageView.image = UIImage(named: "misc.png")
+        case "Sport":
+            programmeCell.iconImageView.image = UIImage(named: "sport.png")
+        default: break
+        }
+        
         return cell
     }
     

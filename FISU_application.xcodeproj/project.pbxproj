@@ -21,7 +21,6 @@
 		AD71E34C1CB39FDD005E784E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34A1CB39FDD005E784E /* Map.swift */; };
 		AD71E34E1CB3A2A0005E784E /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */; };
 		AD71E34F1CB3A2A0005E784E /* SpeakerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */; };
-		AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */; };
 		ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
@@ -35,6 +34,10 @@
 		ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F281C7B21F600872D80 /* Assets.xcassets */; };
 		ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */; };
 		ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */; };
+		E21278B41CBAF6CA003E383E /* misc.png in Resources */ = {isa = PBXBuildFile; fileRef = E21278B11CBAF6CA003E383E /* misc.png */; };
+		E21278B51CBAF6CA003E383E /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = E21278B21CBAF6CA003E383E /* sport.png */; };
+		E21278B61CBAF6CA003E383E /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = E21278B31CBAF6CA003E383E /* calendar.png */; };
+		E21278B81CBAFCE7003E383E /* micro.png in Resources */ = {isa = PBXBuildFile; fileRef = E21278B71CBAFCE7003E383E /* micro.png */; };
 		E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */; };
 		E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */; };
 		E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */; };
@@ -69,11 +72,27 @@
 		E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */; };
 		E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
 		E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
+		E225076F1CB9436F0006EF6D /* WeekSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225076E1CB9436F0006EF6D /* WeekSchedule.swift */; };
+		E22507701CB9436F0006EF6D /* WeekSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225076E1CB9436F0006EF6D /* WeekSchedule.swift */; };
 		E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
+		E2760CE11CB7CD3D005FD12F /* fisu_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2760CE01CB7CD3D005FD12F /* fisu_logo.jpg */; };
+		E2760CE21CB7CD3D005FD12F /* fisu_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2760CE01CB7CD3D005FD12F /* fisu_logo.jpg */; };
 		E2AD35631CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */; };
 		E2AD35641CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */; };
 		E2AD35661CB6C21100891CF2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */; };
 		E2AD35671CB6C21100891CF2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */; };
+		E2ECC0CB1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */; };
+		E2ECC0CC1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */; };
+		E2ECC0CE1CB948F70058F888 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */; };
+		E2ECC0CF1CB948F70058F888 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */; };
+		E2ECC0D11CB94BB70058F888 /* RestaurantSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */; };
+		E2ECC0D21CB94BB70058F888 /* RestaurantSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */; };
+		E2ECC0D41CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */; };
+		E2ECC0D51CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */; };
+		E2ECC0D71CB964ED0058F888 /* WeekScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D61CB964ED0058F888 /* WeekScheduleViewController.swift */; };
+		E2ECC0D81CB964ED0058F888 /* WeekScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D61CB964ED0058F888 /* WeekScheduleViewController.swift */; };
+		E2ECC0DD1CBA7D4C0058F888 /* Place Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */; };
+		E2ECC0DE1CBA7D4C0058F888 /* Place Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +113,6 @@
 		AD71E3471CB39FD2005E784E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		AD71E34A1CB39FDD005E784E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerSet.swift; sourceTree = "<group>"; };
-		AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift; sourceTree = "<group>"; };
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
 		ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +127,10 @@
 		ADE05F321C7B21F600872D80 /* FISU_applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FISU_applicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F361C7B21F600872D80 /* FISU_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FISU_applicationTests.swift; sourceTree = "<group>"; };
 		ADE05F381C7B21F600872D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21278B11CBAF6CA003E383E /* misc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misc.png; sourceTree = "<group>"; };
+		E21278B21CBAF6CA003E383E /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
+		E21278B31CBAF6CA003E383E /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		E21278B71CBAFCE7003E383E /* micro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = micro.png; sourceTree = "<group>"; };
 		E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisuCoreDataManager.swift; sourceTree = "<group>"; };
 		E21A31B41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E21A31B51CA4044C00B83BC4 /* DailySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySchedule.swift; sourceTree = "<group>"; };
@@ -126,9 +148,17 @@
 		E21A31C11CA4044C00B83BC4 /* ActivityCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCategory.swift; sourceTree = "<group>"; };
 		E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E21A31C31CA4044C00B83BC4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E225076E1CB9436F0006EF6D /* WeekSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekSchedule.swift; sourceTree = "<group>"; };
 		E274E0671C91B43500AF8CE9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E2760CE01CB7CD3D005FD12F /* fisu_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fisu_logo.jpg; path = ../../fisu_logo.jpg; sourceTree = "<group>"; };
 		E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
 		E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
+		E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSet.swift; sourceTree = "<group>"; };
+		E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantPageViewController.swift; sourceTree = "<group>"; };
+		E2ECC0D61CB964ED0058F888 /* WeekScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekScheduleViewController.swift; sourceTree = "<group>"; };
+		E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place Annotation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +182,6 @@
 		ADE05F121C7B21F500872D80 = {
 			isa = PBXGroup;
 			children = (
-				AD8B57FB1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift */,
 				E212B38A1CA5BF5200910947 /* Resources */,
 				ADE05F1D1C7B21F500872D80 /* FISU_application */,
 				ADE05F351C7B21F600872D80 /* FISU_applicationTests */,
@@ -175,13 +204,17 @@
 				ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */,
 				E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */,
 				E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */,
-				ADE05F201C7B21F600872D80 /* ViewController.swift */,
 				ADE05F221C7B21F600872D80 /* Main.storyboard */,
-				ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */,
+				ADE05F201C7B21F600872D80 /* ViewController.swift */,
 				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
+				ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */,
+				E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */,
+				E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */,
+				E2ECC0D61CB964ED0058F888 /* WeekScheduleViewController.swift */,
 				E274E0671C91B43500AF8CE9 /* MapViewController.swift */,
 				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
 				E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */,
+				E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */,
 				ADE05F281C7B21F600872D80 /* Assets.xcassets */,
 				ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */,
 				ADE05F2D1C7B21F600872D80 /* Info.plist */,
@@ -206,10 +239,13 @@
 			children = (
 				AD71E33E1CB39F88005E784E /* Event.swift */,
 				AD71E3411CB39FC0005E784E /* Programme.swift */,
-				AD71E3441CB39FCB005E784E /* DayWithActivities.swift */,
 				AD71E34A1CB39FDD005E784E /* Map.swift */,
-				AD71E3471CB39FD2005E784E /* Day.swift */,
 				AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */,
+				E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */,
+				E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */,
+				E225076E1CB9436F0006EF6D /* WeekSchedule.swift */,
+				AD71E3441CB39FCB005E784E /* DayWithActivities.swift */,
+				AD71E3471CB39FD2005E784E /* Day.swift */,
 				E21A31E41CA410E300B83BC4 /* CoreData */,
 			);
 			name = Model;
@@ -226,6 +262,11 @@
 			isa = PBXGroup;
 			children = (
 				AD71E33B1CB39D8A005E784E /* 1721692.png */,
+				E2760CE01CB7CD3D005FD12F /* fisu_logo.jpg */,
+				E21278B11CBAF6CA003E383E /* misc.png */,
+				E21278B71CBAFCE7003E383E /* micro.png */,
+				E21278B21CBAF6CA003E383E /* sport.png */,
+				E21278B31CBAF6CA003E383E /* calendar.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -335,9 +376,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE05F2C1C7B21F600872D80 /* LaunchScreen.storyboard in Resources */,
+				E21278B61CBAF6CA003E383E /* calendar.png in Resources */,
+				E21278B81CBAFCE7003E383E /* micro.png in Resources */,
 				ADE05F291C7B21F600872D80 /* Assets.xcassets in Resources */,
+				E2760CE11CB7CD3D005FD12F /* fisu_logo.jpg in Resources */,
 				AD71E33C1CB39D8A005E784E /* 1721692.png in Resources */,
+				E21278B51CBAF6CA003E383E /* sport.png in Resources */,
 				ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */,
+				E21278B41CBAF6CA003E383E /* misc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD71E33D1CB39D8A005E784E /* 1721692.png in Resources */,
+				E2760CE21CB7CD3D005FD12F /* fisu_logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,24 +404,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD71E3451CB39FCB005E784E /* DayWithActivities.swift in Sources */,
+				E2ECC0D41CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */,
 				E21A31C41CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
 				AD71E34B1CB39FDD005E784E /* Map.swift in Sources */,
+				E2ECC0D71CB964ED0058F888 /* WeekScheduleViewController.swift in Sources */,
 				E2AD35631CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */,
 				E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */,
+				E2ECC0CB1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */,
 				E21A31C81CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
-				AD8B57FC1C7F40B300258BE7 /* ViewControllerbfgdgbfdsgfsdgvfdsTableViewController.swift in Sources */,
 				E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */,
 				ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */,
 				AD71E3421CB39FC0005E784E /* Programme.swift in Sources */,
 				E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
+				E2ECC0DD1CBA7D4C0058F888 /* Place Annotation.swift in Sources */,
 				E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
+				E2ECC0CE1CB948F70058F888 /* RestaurantViewController.swift in Sources */,
 				E2AD35661CB6C21100891CF2 /* SpeakerViewController.swift in Sources */,
 				E21A31D21CA4044C00B83BC4 /* PlaceType.swift in Sources */,
 				AD71E33F1CB39F88005E784E /* Event.swift in Sources */,
+				E2ECC0D11CB94BB70058F888 /* RestaurantSet.swift in Sources */,
 				E21A31DA1CA4044C00B83BC4 /* Activity.swift in Sources */,
 				E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */,
 				ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
 				ADE05F271C7B21F600872D80 /* FISU_application.xcdatamodeld in Sources */,
+				E225076F1CB9436F0006EF6D /* WeekSchedule.swift in Sources */,
 				E21A31C61CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
 				E21A31D81CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */,
 				ADAAB9031C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */,
@@ -397,8 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21A31DD1CA4044C00B83BC4 /* ActivityCategory+CoreDataProperties.swift in Sources */,
+				E2ECC0CF1CB948F70058F888 /* RestaurantViewController.swift in Sources */,
 				E21A31DB1CA4044C00B83BC4 /* Activity.swift in Sources */,
 				ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */,
+				E2ECC0D21CB94BB70058F888 /* RestaurantSet.swift in Sources */,
 				E21A31C91CA4044C00B83BC4 /* Hour+CoreDataProperties.swift in Sources */,
 				AD71E3461CB39FCB005E784E /* DayWithActivities.swift in Sources */,
 				E21A31CD1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
@@ -409,13 +464,17 @@
 				AD71E3401CB39F88005E784E /* Event.swift in Sources */,
 				E21A31C71CA4044C00B83BC4 /* DailySchedule.swift in Sources */,
 				AD71E34F1CB3A2A0005E784E /* SpeakerSet.swift in Sources */,
+				E22507701CB9436F0006EF6D /* WeekSchedule.swift in Sources */,
+				E2ECC0D51CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */,
 				E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */,
 				AD71E3431CB39FC0005E784E /* Programme.swift in Sources */,
 				E2AD35641CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */,
 				E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
+				E2ECC0CC1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */,
 				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
 				E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */,
+				E2ECC0DE1CBA7D4C0058F888 /* Place Annotation.swift in Sources */,
 				AD71E3491CB39FD2005E784E /* Day.swift in Sources */,
 				ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */,
 				E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
@@ -423,6 +482,7 @@
 				E21A31D91CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */,
 				E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */,
 				E21A31C51CA4044C00B83BC4 /* DailySchedule+CoreDataProperties.swift in Sources */,
+				E2ECC0D81CB964ED0058F888 /* WeekScheduleViewController.swift in Sources */,
 				E21A31D31CA4044C00B83BC4 /* PlaceType.swift in Sources */,
 				ADE05F371C7B21F600872D80 /* FISU_applicationTests.swift in Sources */,
 			);

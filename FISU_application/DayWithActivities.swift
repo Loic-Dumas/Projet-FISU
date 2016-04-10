@@ -53,7 +53,7 @@ class DayWithActivities : NSObject {
     
     func dayToString() -> String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MMM dd, yyyy"
+        dateFormatter.dateFormat = "MMMM dd"
         let dateString = dateFormatter.stringFromDate(self.day)
         return dateString
     }

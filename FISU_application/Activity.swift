@@ -13,32 +13,18 @@ import CoreData
 class Activity: NSManagedObject {
     private var speakerSetPrivate : SpeakerSet?
     
-    /*
-    
-    init(entity: NSEntityDescription, managedObjectContext: NSManagedObjectContext, name : String, place : Place, beginString : String, endString : String) {
-        super.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
-        
-        self.name = name
-        self.location = place
-        
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-        dateFormatter.timeZone = NSTimeZone.localTimeZone()
-        // convert string into date
-        self.begin = dateFormatter.dateFromString(beginString) as NSDate!
-        self.end = dateFormatter.dateFromString(endString) as NSDate!
+    var speakerSet : SpeakerSet {
+        get {
+            if speakerSetPrivate == nil {
+                speakerSetPrivate = SpeakerSet()
+                for speaker in speakers! {
+                    speakerSetPrivate!.add(speaker as! Speaker)
+                }
+            }
+            return self.speakerSetPrivate!
+        }
     }
     
-    init(entity: NSEntityDescription, managedObjectContext: NSManagedObjectContext, name : String, place : Place, begin : NSDate, end : NSDate) {
-        super.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
-        self.name = name
-        self.location = place
-        
-        self.begin = begin
-        self.end = end
-    }
- */   
- 
     var begin : NSDate {
         get {
             return NSDate(timeIntervalSince1970: self.beginning)
@@ -56,19 +42,6 @@ class Activity: NSManagedObject {
             self.ending = newValue.timeIntervalSince1970
         }
     }
-    
-    var speakerSet : SpeakerSet {
-        get {
-            if speakerSetPrivate == nil {
-                speakerSetPrivate = SpeakerSet()
-                for speaker in speakers! {
-                    speakerSetPrivate!.add(speaker as! Speaker)
-                }
-            }
-            return self.speakerSetPrivate!
-        }
-    }
-    
     
     func isBefore(activity : Activity) -> Bool {
         return self.begin.compare(activity.begin) == NSComparisonResult.OrderedAscending
@@ -90,7 +63,14 @@ class Activity: NSManagedObject {
     
     func dayToString() -> String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MMM dd, yyyy"
+        dateFormatter.dateFormat = "MMMM dd"
+        let dateString = dateFormatter.stringFromDate(self.begin)
+        return dateString
+    }
+    
+    func dayToStringWithYear() -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
         let dateString = dateFormatter.stringFromDate(self.begin)
         return dateString
     }

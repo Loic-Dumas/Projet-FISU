@@ -31,7 +31,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.hourBeginLabel.text = activityNotNil.beginHourToString()
         self.hourEndLabel.text = activityNotNil.endHourToString()
         self.locationLabel.text = activityNotNil.location!.title
-        self.descriptionTextView.text = activityNotNil.name
+        self.descriptionTextView.text = activityNotNil.descriptionActivity
         self.descriptionTextView.editable = false
         
         // Do any additional setup after loading the view.

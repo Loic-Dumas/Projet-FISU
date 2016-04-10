@@ -1,20 +1,18 @@
 //
-//  ProgrammeTableViewCell.swift
+//  RestaurantTableViewCell.swift
 //  FISU_application
 //
-//  Created by Arnaud ZARAGOZA on 23/02/2016.
+//  Created by LoïcDumas on 09/04/2016.
 //  Copyright © 2016 Arnaud ZARAGOZA. All rights reserved.
 //
 
 import UIKit
 
-class ProgrammeTableViewCell: UITableViewCell {
+class RestaurantTableViewCell: UITableViewCell {
+    var restaurant : Restaurant?
 
-    @IBOutlet weak var activityName: UILabel!
-    @IBOutlet weak var activityBeginning: UILabel!
-    @IBOutlet weak var iconImageView: UIImageView!
-    
-    var activity: Activity? = nil
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var rateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

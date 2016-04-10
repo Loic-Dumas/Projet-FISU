@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
     <entity name="Activity" representedClassName=".Activity" syncable="YES">
         <attribute name="beginning" attributeType="Date" syncable="YES"/>
         <attribute name="descriptionActivity" attributeType="String" syncable="YES"/>
@@ -32,7 +32,7 @@
         <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="locatedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="location" inverseEntity="Activity" syncable="YES"/>
-        <relationship name="locatedRestaurants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="locate" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="locatedRestaurants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="location" inverseEntity="Restaurant" syncable="YES"/>
         <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlaceType" inverseName="places" inverseEntity="PlaceType" syncable="YES"/>
     </entity>
     <entity name="PlaceType" representedClassName=".PlaceType" syncable="YES">
@@ -43,8 +43,8 @@
         <attribute name="descriptionRestaurant" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rate" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="locate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedRestaurants" inverseEntity="Place" syncable="YES"/>
-        <relationship name="open" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="openRestaurant" inverseEntity="DailySchedule" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="locatedRestaurants" inverseEntity="Place" syncable="YES"/>
+        <relationship name="open" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="openRestaurant" inverseEntity="DailySchedule" syncable="YES"/>
     </entity>
     <entity name="Speaker" representedClassName=".Speaker" syncable="YES">
         <attribute name="descriptionSpeaker" optional="YES" attributeType="String" syncable="YES"/>
@@ -58,7 +58,7 @@
         <element name="Hour" positionX="-4689" positionY="-819" width="128" height="105"/>
         <element name="Place" positionX="-5168" positionY="-945" width="128" height="150"/>
         <element name="PlaceType" positionX="-5166" positionY="-750" width="128" height="75"/>
-        <element name="Restaurant" positionX="-4923" positionY="-963" width="128" height="120"/>
+        <element name="Restaurant" positionX="-4923" positionY="-963" width="128" height="118"/>
         <element name="Speaker" positionX="-4835" positionY="-1177" width="128" height="88"/>
     </elements>
 </model>

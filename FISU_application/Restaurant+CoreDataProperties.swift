@@ -12,12 +12,14 @@
 import Foundation
 import CoreData
 
-extension Restaurant {
 
+extension Restaurant {
+    
     @NSManaged var descriptionRestaurant: String?
     @NSManaged var name: String?
     @NSManaged var rate: NSNumber?
-    @NSManaged var locate: Place?
-    @NSManaged var open: DailySchedule?
-
+    @NSManaged var location: Place?
+    @NSManaged var open: NSSet?
+    
 }
+
