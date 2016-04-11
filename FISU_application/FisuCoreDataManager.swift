@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 
 class FisuCoreDataManager {
-    // FACTORY
     var entityActivity : NSEntityDescription
     
     var managedObjectContext : NSManagedObjectContext
@@ -19,11 +18,8 @@ class FisuCoreDataManager {
         self.managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         self.entityActivity = NSEntityDescription.entityForName("Activity", inManagedObjectContext: self.managedObjectContext)!
     }
-    /*
-     func buildActivity(name name : String, descriptionActivity : String, begin : NSDate, end : NSDate, going : Bool, category : ActivityCategory, location : Place, speakerSet : SpeakerSet) -> Activity {
-     return Activity(entity: entityActivity, managedObjectContext: managedObjectContext, name: name, place: location, begin: begin, end: end)
-     }
-     */
+    
+    
     func loadData() -> Event {
         var event = Event(coreDataManager: self)
         
@@ -104,13 +100,6 @@ class FisuCoreDataManager {
             fatalError("There was an error fetching the list of Place ! \(error)")
         }
         
-//        
-//        for restaurant in event.map.restaurants {
-//            print("restau : " + restaurant.name! )
-//        }
-        
-        
-        
         
         // we don't load for Speakers, DailySchedule, Hour
         
@@ -129,52 +118,65 @@ class FisuCoreDataManager {
         let entityPlaceType =  NSEntityDescription.entityForName("PlaceType", inManagedObjectContext: self.managedObjectContext)
         
         
-        let placeType1 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let placeType2 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let placeType3 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let placeType4 = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeTypeSport = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeTypeConference = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeTypeAccomodation = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeTypeRestaurant = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
-        placeType1.setValue("Park", forKey: "name")
-        placeType2.setValue("Conference place", forKey: "name")
-        placeType3.setValue("Miscellaneous", forKey: "name")
-        placeType4.setValue("River", forKey: "name")
+        placeTypeSport.setValue("Sport", forKey: "name")
+        placeTypeConference.setValue("Conference place", forKey: "name")
+        placeTypeAccomodation.setValue("Accomodation", forKey: "name")
         placeTypeRestaurant.setValue("Restaurant", forKey: "name")
         
         
         //2.2 create Place
         let entityPlace =  NSEntityDescription.entityForName("Place", inManagedObjectContext:self.managedObjectContext)
         
-        let place1 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let place2 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let place3 = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placePolytech = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeCom = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placePeyrou = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeEdithPiaf = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeMontcalm = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeLez = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeRestauLuigi = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeRestau3Brasseurs = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeRestoU = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let placeMarvellous = NSManagedObject(entity: entityPlace!, insertIntoManagedObjectContext: self.managedObjectContext)
         
-        place1.setValue("Polytech", forKey: "title")
-        place1.setValue("Engineering School", forKey: "subTitle")
-        place1.setValue(43.632726, forKey: "latitude")
-        place1.setValue(3.862590, forKey: "longitude")
-        place1.setValue(placeType2, forKey: "type")
+        placePolytech.setValue("Polytech", forKey: "title")
+        placePolytech.setValue("Engineering School", forKey: "subTitle")
+        placePolytech.setValue(43.632726, forKey: "latitude")
+        placePolytech.setValue(3.862590, forKey: "longitude")
+        placePolytech.setValue(placeTypeConference, forKey: "type")
         
-        place2.setValue("Comédie", forKey: "title")
-        place2.setValue("Famous place in Montpellier", forKey: "subTitle")
-        place2.setValue(43.608957, forKey: "latitude")
-        place2.setValue(3.880332, forKey: "longitude")
-        place2.setValue(placeType3, forKey: "type")
+        placeCom.setValue("Comédie", forKey: "title")
+        placeCom.setValue("Famous place in Montpellier", forKey: "subTitle")
+        placeCom.setValue(43.608917, forKey: "latitude")
+        placeCom.setValue(3.880237, forKey: "longitude")
+        placeCom.setValue(placeTypeAccomodation, forKey: "type")
         
-        place3.setValue("Place du Peyrou", forKey: "title")
-        place3.setValue("Nice garden", forKey: "subTitle")
-        place3.setValue(43.611304, forKey: "latitude")
-        place3.setValue(3.870713, forKey: "longitude")
-        place3.setValue(placeType1, forKey: "type")
+        placePeyrou.setValue("Place du Peyrou", forKey: "title")
+        placePeyrou.setValue("Nice garden", forKey: "subTitle")
+        placePeyrou.setValue(43.611304, forKey: "latitude")
+        placePeyrou.setValue(3.870713, forKey: "longitude")
+        placePeyrou.setValue(placeTypeSport, forKey: "type")
+        
+        placeEdithPiaf.setValue("Parc Edith Piaf", forKey: "title")
+        placeEdithPiaf.setValue("Nice Park", forKey: "subTitle")
+        placeEdithPiaf.setValue(43.621857, forKey: "latitude")
+        placeEdithPiaf.setValue(3.888266, forKey: "longitude")
+        placeEdithPiaf.setValue(placeTypeSport, forKey: "type")
+        
+        placeMontcalm.setValue("Parc Montcalm", forKey: "title")
+        placeMontcalm.setValue("Nice Park", forKey: "subTitle")
+        placeMontcalm.setValue(43.598023, forKey: "latitude")
+        placeMontcalm.setValue(3.860017, forKey: "longitude")
+        placeMontcalm.setValue(placeTypeSport, forKey: "type")
         
         placeLez.setValue("Rives du Lez", forKey: "title")
         placeLez.setValue("Le lez, tumultueux et impétueux fleuves. Attention, contient des déchets toxiques, ne pas se baingner", forKey: "subTitle")
         placeLez.setValue(43.607505, forKey: "latitude")
         placeLez.setValue(3.897319, forKey: "longitude")
-        placeLez.setValue(placeType4, forKey: "type")
+        placeLez.setValue(placeTypeSport, forKey: "type")
         
         placeRestauLuigi.setValue("Chez Luigi", forKey: "title")
         placeRestauLuigi.setValue("Pizzeria", forKey: "subTitle")
@@ -194,16 +196,22 @@ class FisuCoreDataManager {
         placeRestoU.setValue( 3.860330, forKey: "longitude")
         placeRestoU.setValue(placeTypeRestaurant, forKey: "type")
         
+        placeMarvellous.setValue("Marvellous", forKey: "title")
+        placeMarvellous.setValue("Burger restaurant", forKey: "subTitle")
+        placeMarvellous.setValue(43.609358, forKey: "latitude")
+        placeMarvellous.setValue( 3.877035, forKey: "longitude")
+        placeMarvellous.setValue(placeTypeRestaurant, forKey: "type")
+        
         
         //2.3 create ActivityCategory
         let entityActivityCategory =  NSEntityDescription.entityForName("ActivityCategory", inManagedObjectContext:self.managedObjectContext)
         
-        let activityCategory1 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activityCategory2 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activityCategory3 = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
-        activityCategory1.setValue("Sport", forKey: "name")
-        activityCategory2.setValue("Conference", forKey: "name")
-        activityCategory3.setValue("Miscellaneous", forKey: "name")
+        let activityCategorySport = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityCategoryConference = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityCategoryMiscellaneous = NSManagedObject(entity: entityActivityCategory!, insertIntoManagedObjectContext: self.managedObjectContext)
+        activityCategorySport.setValue("Sport", forKey: "name")
+        activityCategoryConference.setValue("Conference", forKey: "name")
+        activityCategoryMiscellaneous.setValue("Miscellaneous", forKey: "name")
         
         
         //2.4 Create the Speaker
@@ -225,151 +233,112 @@ class FisuCoreDataManager {
         //2.5 Create the Activity
         let entityActivity =  NSEntityDescription.entityForName("Activity", inManagedObjectContext:self.managedObjectContext)
         
-        let activity1 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activity2 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activity3 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activity4 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let activity5 = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityWelcoming = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityVolley = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityRugby = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityfreeTime = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityRunning = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityClosingCeremony = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityGariga = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let activityKayak = NSManagedObject(entity: entityActivity!, insertIntoManagedObjectContext: self.managedObjectContext)
         
         
-        activity1.setValue("Welcoming", forKey: "name")
-        activity1.setValue("This description is fort the welcoming, LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia", forKey: "descriptionActivity")
-        activity1.setValue(stringToDate("06-11-2016 15:30"), forKey: "beginning")
-        activity1.setValue(stringToDate("06-11-2016 16:30"), forKey: "ending")
-        activity1.setValue(place1, forKey: "location")
-        activity1.setValue(activityCategory2, forKey: "category")
-        activity1.setValue(speakers, forKey: "speakers")
+        activityWelcoming.setValue("Welcoming", forKey: "name")
+        activityWelcoming.setValue("This description is fort the welcoming, LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia", forKey: "descriptionActivity")
+        activityWelcoming.setValue(stringToDate("06-11-2016 09:30"), forKey: "beginning")
+        activityWelcoming.setValue(stringToDate("06-11-2016 10:45"), forKey: "ending")
+        activityWelcoming.setValue(placePolytech, forKey: "location")
+        activityWelcoming.setValue(activityCategoryConference, forKey: "category")
+        activityWelcoming.setValue(speakers, forKey: "speakers")
+        activityWelcoming.setValue(true, forKey: "going")
         
-        activity2.setValue("Free time", forKey: "name")
-        activity2.setValue("Discover a famus place in Montpellier.", forKey: "descriptionActivity")
-        activity2.setValue(stringToDate("06-12-2016 09:30"), forKey: "beginning")
-        activity2.setValue(stringToDate("06-12-2016 10:30"), forKey: "ending")
-        activity2.setValue(place2, forKey: "location")
-        activity2.setValue(activityCategory3, forKey: "category")
+        activityVolley.setValue("Volley", forKey: "name")
+        activityVolley.setValue("A match of volley ball LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni ", forKey: "descriptionActivity")
+        activityVolley.setValue(stringToDate("06-11-2016 11:00"), forKey: "beginning")
+        activityVolley.setValue(stringToDate("06-11-2016 12:30"), forKey: "ending")
+        activityVolley.setValue(placeMontcalm, forKey: "location")
+        activityVolley.setValue(activityCategorySport, forKey: "category")
         
-        activity3.setValue("Running", forKey: "name")
-        activity3.setValue("A short run to start the FISU.", forKey: "descriptionActivity")
-        activity3.setValue(stringToDate("06-12-2016 15:30"), forKey: "beginning")
-        activity3.setValue(stringToDate("06-12-2016 15:30"), forKey: "ending")
-        activity3.setValue(place3, forKey: "location")
-        activity3.setValue(activityCategory1, forKey: "category")
+        activityRugby.setValue("Rugby", forKey: "name")
+        activityRugby.setValue("Match of rugby. LoremExsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni ", forKey: "descriptionActivity")
+        activityRugby.setValue(stringToDate("06-11-2016 15:00"), forKey: "beginning")
+        activityRugby.setValue(stringToDate("06-11-2016 16:30"), forKey: "ending")
+        activityRugby.setValue(placeMontcalm, forKey: "location")
+        activityRugby.setValue(activityCategorySport, forKey: "category")
         
-        activity4.setValue("Closing Ceremony", forKey: "name")
-        activity4.setValue("This was a really great FISU for 2016, now it's time for a wonderfull closing ceremony", forKey: "descriptionActivity")
-        activity4.setValue(stringToDate("06-13-2016 19:15"), forKey: "beginning")
-        activity4.setValue(stringToDate("06-13-2016 15:30"), forKey: "ending")
-        activity4.setValue(place1, forKey: "location")
-        activity4.setValue(activityCategory1, forKey: "category")
-        activity4.setValue(speakers, forKey: "speakers")
+        activityfreeTime.setValue("Free time", forKey: "name")
+        activityfreeTime.setValue("Discover a famus place in Montpellier.", forKey: "descriptionActivity")
+        activityfreeTime.setValue(stringToDate("06-12-2016 09:30"), forKey: "beginning")
+        activityfreeTime.setValue(stringToDate("06-12-2016 10:30"), forKey: "ending")
+        activityfreeTime.setValue(placeCom, forKey: "location")
+        activityfreeTime.setValue(activityCategoryMiscellaneous, forKey: "category")
+        activityfreeTime.setValue(true, forKey: "going")
         
-        activity5.setValue("Kayak", forKey: "name")
-        activity5.setValue("Race in Kayak. Prepare your short and sunglasses, because it's raining.", forKey: "descriptionActivity")
-        activity5.setValue(stringToDate("06-12-2016 14:00"), forKey: "beginning")
-        activity5.setValue(stringToDate("06-12-2016 16:30"), forKey: "ending")
-        activity5.setValue(placeLez, forKey: "location")
-        activity5.setValue(activityCategory1, forKey: "category")
+        activityGariga.setValue("Danse Gariga", forKey: "name")
+        activityGariga.setValue("Discover a wonderfull danse session of the folkloric club of Montpllier", forKey: "descriptionActivity")
+        activityGariga.setValue(stringToDate("06-12-2016 10:45"), forKey: "beginning")
+        activityGariga.setValue(stringToDate("06-12-2016 12:00"), forKey: "ending")
+        activityGariga.setValue(placeCom, forKey: "location")
+        activityGariga.setValue(activityCategoryMiscellaneous, forKey: "category")
         
+        activityRunning.setValue("Running", forKey: "name")
+        activityRunning.setValue("A short run to start the FISU.", forKey: "descriptionActivity")
+        activityRunning.setValue(stringToDate("06-12-2016 15:30"), forKey: "beginning")
+        activityRunning.setValue(stringToDate("06-12-2016 15:30"), forKey: "ending")
+        activityRunning.setValue(placePeyrou, forKey: "location")
+        activityRunning.setValue(activityCategorySport, forKey: "category")
         
-        //2.6 Create hour
-        let entityHour =  NSEntityDescription.entityForName("Hour", inManagedObjectContext:self.managedObjectContext)
+        activityClosingCeremony.setValue("Closing Ceremony", forKey: "name")
+        activityClosingCeremony.setValue("This was a really great FISU for 2016, now it's time for a wonderfull closing ceremony", forKey: "descriptionActivity")
+        activityClosingCeremony.setValue(stringToDate("06-13-2016 19:15"), forKey: "beginning")
+        activityClosingCeremony.setValue(stringToDate("06-13-2016 15:30"), forKey: "ending")
+        activityClosingCeremony.setValue(placePolytech, forKey: "location")
+        activityClosingCeremony.setValue(activityCategoryConference, forKey: "category")
+        activityClosingCeremony.setValue(speakers, forKey: "speakers")
         
-        let hour11_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour12_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour12_30 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour13_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour13_30 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour14_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour14_30 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        
-        let hour19_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour19_30 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour20_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour20_30 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour21_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour22_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let hour23_00 = NSManagedObject(entity: entityHour!, insertIntoManagedObjectContext: self.managedObjectContext)
-        
-        hour11_00.setValue(11, forKey: "hour"); hour11_00.setValue(0, forKey: "minute")
-        hour12_00.setValue(12, forKey: "hour"); hour12_00.setValue(0, forKey: "minute")
-        hour12_30.setValue(12, forKey: "hour"); hour12_30.setValue(30, forKey: "minute")
-        hour13_00.setValue(13, forKey: "hour"); hour13_00.setValue(0, forKey: "minute")
-        hour13_30.setValue(13, forKey: "hour"); hour13_30.setValue(30, forKey: "minute")
-        hour14_00.setValue(14, forKey: "hour"); hour14_00.setValue(0, forKey: "minute")
-        hour14_30.setValue(14, forKey: "hour"); hour14_30.setValue(30, forKey: "minute")
-        
-        hour19_00.setValue(19, forKey: "hour"); hour19_00.setValue(0, forKey: "minute")
-        hour19_30.setValue(19, forKey: "hour"); hour19_30.setValue(30, forKey: "minute")
-        hour20_00.setValue(20, forKey: "hour"); hour20_00.setValue(0, forKey: "minute")
-        hour21_00.setValue(20, forKey: "hour"); hour20_30.setValue(30, forKey: "minute")
-        hour21_00.setValue(21, forKey: "hour"); hour21_00.setValue(0, forKey: "minute")
-        hour22_00.setValue(22, forKey: "hour"); hour22_00.setValue(0, forKey: "minute")
-        hour23_00.setValue(23, forKey: "hour"); hour23_00.setValue(0, forKey: "minute")
+        activityKayak.setValue("Kayak", forKey: "name")
+        activityKayak.setValue("Race in Kayak. Prepare your short and sunglasses, because it's raining.", forKey: "descriptionActivity")
+        activityKayak.setValue(stringToDate("06-12-2016 14:00"), forKey: "beginning")
+        activityKayak.setValue(stringToDate("06-12-2016 16:30"), forKey: "ending")
+        activityKayak.setValue(placeLez, forKey: "location")
+        activityKayak.setValue(activityCategorySport, forKey: "category")
         
         
-        //2.7 Create DailySchedule
-        let entityDailySchedule =  NSEntityDescription.entityForName("DailySchedule", inManagedObjectContext:self.managedObjectContext)
-        
-        let monday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let tuesday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let wednesday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let thursday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let friday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let saturday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let sunday1 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        
-        let monday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let tuesday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let wednesday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let thursday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let friday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let saturday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        let sunday2 = NSManagedObject(entity: entityDailySchedule!, insertIntoManagedObjectContext: self.managedObjectContext)
-        
-        monday1.setValue(0, forKey: "day"); monday1.setValue(hour11_00, forKey: "opening"); monday1.setValue(hour20_30, forKey: "closure")
-        tuesday1.setValue(0, forKey: "day"); tuesday1.setValue(hour12_00, forKey: "opening"); tuesday1.setValue(hour20_30, forKey: "closure")
-        wednesday1.setValue(0, forKey: "day"); wednesday1.setValue(hour12_00, forKey: "opening"); wednesday1.setValue(hour14_00, forKey: "closure")
-        thursday1.setValue(0, forKey: "day"); thursday1.setValue(hour12_00, forKey: "opening"); thursday1.setValue(hour20_00, forKey: "closure")
-        friday1.setValue(0, forKey: "day"); friday1.setValue(hour11_00, forKey: "opening"); friday1.setValue(hour21_00, forKey: "closure")
-        saturday1.setValue(0, forKey: "day"); saturday1.setValue(hour20_00, forKey: "opening"); saturday1.setValue(hour22_00, forKey: "closure")
-        sunday1.setValue(0, forKey: "day"); sunday1.setValue(hour20_00, forKey: "opening"); sunday1.setValue(hour23_00, forKey: "closure")
-        let week1Table : [NSManagedObject] = [monday1, tuesday1, wednesday1, thursday1, friday1, saturday1, sunday1]
-        let week1 = NSSet(array: week1Table)
-        
-        monday2.setValue(0, forKey: "day"); monday2.setValue(hour11_00, forKey: "opening"); monday2.setValue(hour14_30, forKey: "closure")
-        tuesday2.setValue(0, forKey: "day"); tuesday2.setValue(hour20_00, forKey: "opening"); tuesday2.setValue(hour23_00, forKey: "closure")
-        wednesday2.setValue(0, forKey: "day"); wednesday2.setValue(hour11_00, forKey: "opening"); wednesday2.setValue(hour14_30, forKey: "closure")
-        thursday2.setValue(0, forKey: "day"); thursday2.setValue(hour20_00, forKey: "opening"); thursday2.setValue(hour23_00, forKey: "closure")
-        friday2.setValue(0, forKey: "day"); friday2.setValue(hour14_00, forKey: "opening"); friday2.setValue(hour23_00, forKey: "closure")
-        saturday2.setValue(0, forKey: "day"); saturday2.setValue(hour20_00, forKey: "opening"); saturday2.setValue(hour23_00, forKey: "closure")
-        sunday2.setValue(0, forKey: "day"); sunday2.setValue(hour14_00, forKey: "opening"); sunday2.setValue(hour22_00, forKey: "closure")
-        let week2Table : [NSManagedObject] = [monday2, tuesday2, wednesday2, thursday2, friday2, saturday2, sunday2]
-        let week2 = NSSet(array: week2Table)
-        
-        
-        //2.8 Create Restaurant
+        //2.6 Create Restaurant
         let entityRestaurant =  NSEntityDescription.entityForName("Restaurant", inManagedObjectContext:self.managedObjectContext)
         
         let luigi = NSManagedObject(entity: entityRestaurant!, insertIntoManagedObjectContext: self.managedObjectContext)
         let brasseurs = NSManagedObject(entity: entityRestaurant!, insertIntoManagedObjectContext: self.managedObjectContext)
         let restoU = NSManagedObject(entity: entityRestaurant!, insertIntoManagedObjectContext: self.managedObjectContext)
+        let restoMarvellous = NSManagedObject(entity: entityRestaurant!, insertIntoManagedObjectContext: self.managedObjectContext)
         
         luigi.setValue("Chez Luigi", forKey: "name")
         luigi.setValue("Pizzeria chez Luigi, idéale pour manger un bon couscous ou pour dormir.", forKey: "descriptionRestaurant")
         luigi.setValue(5, forKey: "rate")
         luigi.setValue(placeRestauLuigi, forKey: "location")
-        luigi.setValue(week1, forKey: "open")
+        luigi.setValue(19, forKey: "openning")
+        luigi.setValue(23, forKey: "closing")
         
         brasseurs.setValue("Les 3 brasseurs", forKey: "name")
         brasseurs.setValue("Bonne brasserie, idéeale pour déguster de bonne flamenkuche autour de bière réalisée sur place.", forKey: "descriptionRestaurant")
         brasseurs.setValue(3, forKey: "rate")
-        brasseurs.setValue(week1, forKey: "open")
         brasseurs.setValue(placeRestau3Brasseurs, forKey: "location")
+        brasseurs.setValue(14, forKey: "openning")
+        brasseurs.setValue(23, forKey: "closing")
         
         restoU.setValue("RU triolet", forKey: "name")
         restoU.setValue("A proximité de la faculté des sciences, vous pourrez bénéficier de prix exceptionnel sur présentation d'un justificatif de votre participation au FISU.", forKey: "descriptionRestaurant")
-        restoU.setValue(4, forKey: "rate")
-        restoU.setValue(week2, forKey: "open")
+        restoU.setValue(2, forKey: "rate")
         restoU.setValue(placeRestoU, forKey: "location")
+        restoU.setValue(11, forKey: "openning")
+        restoU.setValue(14, forKey: "closing")
+        
+        restoMarvellous.setValue("Marvellous", forKey: "name")
+        restoMarvellous.setValue("Restaurant spécialisé dans les comics. De nombreux plats à déguster pour un prix modeste. Le soir, fait également bar gay, d'après google. Et nous recommandons le burger avec le magré de canard ! ", forKey: "descriptionRestaurant")
+        restoMarvellous.setValue(5, forKey: "rate")
+        restoMarvellous.setValue(placeMarvellous, forKey: "location")
+        restoMarvellous.setValue(11, forKey: "openning")
+        restoMarvellous.setValue(23, forKey: "closing")
      
         
         

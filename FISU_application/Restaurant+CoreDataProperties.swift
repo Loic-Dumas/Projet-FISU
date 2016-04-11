@@ -18,8 +18,9 @@ extension Restaurant {
     @NSManaged var descriptionRestaurant: String?
     @NSManaged var name: String?
     @NSManaged var rate: NSNumber?
+    @NSManaged var openning: NSNumber?
+    @NSManaged var closing: NSNumber?
     @NSManaged var location: Place?
-    @NSManaged var open: NSSet?
     
 }
 

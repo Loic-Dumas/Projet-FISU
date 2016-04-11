@@ -11,8 +11,9 @@ import MapKit
 
 class RestaurantPageViewController: UIViewController {
     var restaurant : Restaurant? = nil
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var openCloseLabel: UILabel!
     @IBOutlet weak var nameNavvigationItem: UINavigationItem!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var restaurantMapView: MKMapView!
     
@@ -21,6 +22,7 @@ class RestaurantPageViewController: UIViewController {
         self.nameNavvigationItem.title = restaurant?.name
         self.descriptionTextView.text = restaurant?.descriptionRestaurant
         self.rateLabel.text = rateInStar(restaurant?.rate as! Int)
+        self.openCloseLabel.text  = "Open : \((restaurant?.openning)!) h - Close \((restaurant?.closing)!) h"
         
         let restaurantLocation = self.restaurant?.location
         
@@ -49,15 +51,6 @@ class RestaurantPageViewController: UIViewController {
     
     
     
-    
-    
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let weekScheduleViewController = segue.destinationViewController as! WeekScheduleViewController
-        
-        weekScheduleViewController.restaurant = self.restaurant
-    }
     
     private func rateInStar(rateNumber : Int) -> String {
         var rateString = ""

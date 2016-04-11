@@ -45,12 +45,27 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         programmeCell.activity = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)
         programmeCell.activityBeginning.text = programmeCell.activity?.beginHourToString()
         programmeCell.activityName.text = programmeCell.activity?.name
+        
+        
+        //add the icons
         switch programmeCell.activity!.category!.name! {
         case "Miscellaneous":
-            programmeCell.iconImageView.image = UIImage(named: "misc.png")
+            if (programmeCell.activity?.going == true) {
+                programmeCell.iconImageView.image = UIImage(named: "miscChecked.png")
+            } else {
+                programmeCell.iconImageView.image = UIImage(named: "misc.png")
+            }
+            
         case "Sport":
-            programmeCell.iconImageView.image = UIImage(named: "sport.png")
-        default: break
+            if (programmeCell.activity?.going == true) {
+                programmeCell.iconImageView.image = UIImage(named: "sportChecked.png")
+            } else {
+                programmeCell.iconImageView.image = UIImage(named: "sport.png")
+            }
+        default:
+            if (programmeCell.activity?.going == true) {
+                programmeCell.iconImageView.image = UIImage(named: "microChecked.png")
+            }
         }
         
         return cell

@@ -12,19 +12,6 @@ import CoreData
 
 class Restaurant: NSManagedObject {
     
-    private var weekSchedulePrivate : WeekSchedule?
     
-    var weekSchedule : WeekSchedule {
-        get {
-            if weekSchedulePrivate == nil {
-                weekSchedulePrivate = WeekSchedule()
-                for dailySchedule in open! {
-                    print("Restaurant : Ouvert le \(dailySchedule.day) à :")
-                    weekSchedulePrivate!.add(dailySchedule as! DailySchedule)
-                }
-            }
-            return self.weekSchedulePrivate!
-        }
-    }
 
 }

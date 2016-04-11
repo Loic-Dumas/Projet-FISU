@@ -70,16 +70,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func pinTintColor(type : String) -> UIColor  {
         var color : UIColor
         switch type {
-        case "Park":
-            color = UIColor.greenColor()
-        case "Restaurant":
-            color = UIColor.purpleColor()
-        case "River":
+        case "Sport":
             color = UIColor.blueColor()
-        default:
+        case "Restaurant":
             color = UIColor.redColor()
+        case "Conference place":
+            color = UIColor.yellowColor()
+        default:
+            color = UIColor.purpleColor()
         }
         return color
+        
     }
     
     

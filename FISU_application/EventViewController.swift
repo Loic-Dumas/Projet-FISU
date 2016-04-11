@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
@@ -18,7 +19,14 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var speakerTableView: UITableView!
+    @IBOutlet var goingSwitch: UISwitch!
 
+    @IBAction func goingActionSwitch(sender: AnyObject) {
+        self.activity?.going = !(self.activity?.going)!
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.speakerTableView.delegate = self
@@ -33,6 +41,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.locationLabel.text = activityNotNil.location!.title
         self.descriptionTextView.text = activityNotNil.descriptionActivity
         self.descriptionTextView.editable = false
+        self.goingSwitch.on = activityNotNil.going
         
         // Do any additional setup after loading the view.
     }
