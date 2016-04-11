@@ -18,6 +18,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var hourEndLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet var categoryLabel: UILabel!
     @IBOutlet weak var speakerTableView: UITableView!
     @IBOutlet var goingSwitch: UISwitch!
 
@@ -41,6 +42,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.locationLabel.text = activityNotNil.location!.title
         self.descriptionTextView.text = activityNotNil.descriptionActivity
         self.descriptionTextView.editable = false
+        self.categoryLabel.text = activityNotNil.category?.name
         self.goingSwitch.on = activityNotNil.going
         
         // Do any additional setup after loading the view.

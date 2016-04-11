@@ -274,19 +274,19 @@ class FisuCoreDataManager {
         activityfreeTime.setValue(activityCategoryMiscellaneous, forKey: "category")
         activityfreeTime.setValue(true, forKey: "going")
         
-        activityGariga.setValue("Danse Gariga", forKey: "name")
-        activityGariga.setValue("Discover a wonderfull danse session of the folkloric club of Montpllier", forKey: "descriptionActivity")
-        activityGariga.setValue(stringToDate("06-12-2016 10:45"), forKey: "beginning")
-        activityGariga.setValue(stringToDate("06-12-2016 12:00"), forKey: "ending")
-        activityGariga.setValue(placeCom, forKey: "location")
-        activityGariga.setValue(activityCategoryMiscellaneous, forKey: "category")
-        
         activityRunning.setValue("Running", forKey: "name")
         activityRunning.setValue("A short run to start the FISU.", forKey: "descriptionActivity")
-        activityRunning.setValue(stringToDate("06-12-2016 15:30"), forKey: "beginning")
-        activityRunning.setValue(stringToDate("06-12-2016 15:30"), forKey: "ending")
+        activityRunning.setValue(stringToDate("06-12-2016 10:30"), forKey: "beginning")
+        activityRunning.setValue(stringToDate("06-12-2016 11:30"), forKey: "ending")
         activityRunning.setValue(placePeyrou, forKey: "location")
         activityRunning.setValue(activityCategorySport, forKey: "category")
+        
+        activityGariga.setValue("Danse Gariga", forKey: "name")
+        activityGariga.setValue("Discover a wonderfull danse session of the folkloric club of Montpllier", forKey: "descriptionActivity")
+        activityGariga.setValue(stringToDate("06-12-2016 13:45"), forKey: "beginning")
+        activityGariga.setValue(stringToDate("06-12-2016 15:00"), forKey: "ending")
+        activityGariga.setValue(placeCom, forKey: "location")
+        activityGariga.setValue(activityCategoryMiscellaneous, forKey: "category")
         
         activityClosingCeremony.setValue("Closing Ceremony", forKey: "name")
         activityClosingCeremony.setValue("This was a really great FISU for 2016, now it's time for a wonderfull closing ceremony", forKey: "descriptionActivity")
