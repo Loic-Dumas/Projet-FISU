@@ -11,10 +11,7 @@ import XCTest
 
 class FISU_applicationTests: XCTestCase {
     
-    static var montagne = FISU_applicationTests.getMontagne()
-    static var com = FISU_applicationTests.getCom()
-    
-    static func getMontagne() -> Place {
+     func getMontagne() -> Place {
         let place = Place()
         place.title = "Montagne"
         place.latitude = 40
@@ -24,7 +21,7 @@ class FISU_applicationTests: XCTestCase {
         return place
     }
     
-    static func getCom() -> Place {
+     func getCom() -> Place {
         let place = Place()
         place.title = "Comedie"
         place.latitude = 43.6109200
@@ -33,7 +30,78 @@ class FISU_applicationTests: XCTestCase {
         
         return place
     }
-  
+    
+    
+     func getActivityCategory() -> ActivityCategory {
+        let cat = ActivityCategory()
+        cat.name = "category de test"
+        return cat
+    }
+    
+     func getActivitySki() -> Activity {
+        let ski = Activity()
+        ski.name = "Ski"
+        ski.descriptionActivity = "Ski dans la montagne"
+        ski.going = false
+        ski.beginning = stringToDate("02-23-2016 08:30").timeIntervalSince1970
+        ski.ending = stringToDate("02-23-2016 09:30").timeIntervalSince1970
+        ski.category = self.getActivityCategory()
+        ski.location = self.getMontagne()
+        
+        return ski
+    }
+    
+    func getActivityRepas() -> Activity {
+        let repas = Activity()
+        repas.name = "Repas"
+        repas.descriptionActivity = "Repas description"
+        repas.going = true
+        repas.beginning = stringToDate("02-23-2016 12:30").timeIntervalSince1970
+        repas.ending = stringToDate("02-23-2016 14:00").timeIntervalSince1970
+        repas.category = self.getActivityCategory()
+        repas.location = self.getCom()
+        
+        return repas
+    }
+    
+    func getActivityRando() -> Activity {
+        let rando = Activity()
+        rando.name = "Rando"
+        rando.descriptionActivity = "Rando description"
+        rando.going = true
+        rando.beginning = stringToDate("02-23-2016 10:30").timeIntervalSince1970
+        rando.ending = stringToDate("02-23-2016 11:00").timeIntervalSince1970
+        rando.category = self.getActivityCategory()
+        rando.location = self.getCom()
+        
+        return rando
+    }
+    
+    func getActivityRandoFin() -> Activity {
+        let rando = Activity()
+        rando.name = "Rando d'adieux"
+        rando.descriptionActivity = "Rando d'adieux description"
+        rando.going = true
+        rando.beginning = stringToDate("02-24-2016 10:30").timeIntervalSince1970
+        rando.ending = stringToDate("02-24-2016 11:00").timeIntervalSince1970
+        rando.category = self.getActivityCategory()
+        rando.location = self.getCom()
+        
+        return rando
+    }
+    
+    func getActivityRandoDebut() -> Activity {
+        let rando = Activity()
+        rando.name = "Rando de début"
+        rando.descriptionActivity = "Rando de début description"
+        rando.going = true
+        rando.beginning = stringToDate("02-22-2016 10:30").timeIntervalSince1970
+        rando.ending = stringToDate("02-22-2016 11:00").timeIntervalSince1970
+        rando.category = self.getActivityCategory()
+        rando.location = self.getCom()
+        
+        return rando
+    }
     
     override func setUp() {
         super.setUp()
@@ -46,13 +114,10 @@ class FISU_applicationTests: XCTestCase {
     }
     
     func testProgramme() {
-        
-        
-        
-        let programme = Programme()
-        let ski = Activity(name: "Ski", place: FISU_applicationTests.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
-        let miam = Activity(name: "Repas", place: FISU_applicationTests.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
-        let rando = Activity(name: "Rando", place: FISU_applicationTests.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        let programme = Programme(coreDataManager: FisuCoreDataManager())
+        let ski = self.getActivitySki()
+        let miam = self.getActivityRepas()
+        let rando = self.getActivityRando()
         
         
         XCTAssertEqual(programme.numberOfDays(), 0)
@@ -100,7 +165,7 @@ class FISU_applicationTests: XCTestCase {
         XCTAssertEqual(programme.getAtDate(ski.begin, index: 2), miam)
         
         // a new day
-        let randoDeFin = Activity(name: "Rando d'adieux", place: FISU_applicationTests.com, begin: "02-24-2016 10:30", end: "02-24-2016 11:00")
+        let randoDeFin = self.getActivityRandoFin()
         programme.addActivity(randoDeFin)
         XCTAssertEqual(programme.numberOfDays(), 2)
         XCTAssertEqual(programme.numberOfActivityForDay(randoDeFin.begin), 1)
@@ -119,7 +184,7 @@ class FISU_applicationTests: XCTestCase {
         XCTAssertEqual(programme.getAtDate(ski.begin, index: 2), miam)
         
         // add activity before all
-        let randoDeDebut = Activity(name: "Rando de début", place: FISU_applicationTests.com, begin: "02-22-2016 10:30", end: "02-22-2016 11:00")
+        let randoDeDebut = self.getActivityRandoDebut()
         programme.addActivity(randoDeDebut)
         XCTAssertEqual(programme.numberOfDays(), 3)
         XCTAssertEqual(programme.numberOfActivityForDay(randoDeDebut.begin), 1)
@@ -157,10 +222,10 @@ class FISU_applicationTests: XCTestCase {
         
         let dayWithActivities = DayWithActivities(day: date)
         
-        let ski = Activity(name: "Ski", place: FISU_applicationTests.montagne, begin: "02-23-2016 08:30", end: "02-23-2016 09:30")
+        let ski = self.getActivitySki()
         //let conf = Activity(name: "Conf intro", place: Place.polytech, begin: "02-22-2016 08:30", end: "02-23-2016 11:30")
-        let miam = Activity(name: "Repas", place: FISU_applicationTests.com, begin: "02-23-2016 12:30", end: "02-23-2016 14:00")
-        let rando = Activity(name: "Rando", place: FISU_applicationTests.com, begin: "02-23-2016 10:30", end: "02-23-2016 11:00")
+        let miam = self.getActivityRepas()
+        let rando = self.getActivityRando()
         
         XCTAssertEqual(dayWithActivities.numberOfActivity(), 0)
         
@@ -190,8 +255,6 @@ class FISU_applicationTests: XCTestCase {
     }
     
     func testExample() {
-        //let ac = Activity.ski
-        //print(ac.begin)
         
     }
     
@@ -200,6 +263,17 @@ class FISU_applicationTests: XCTestCase {
         self.measureBlock {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    
+    
+    
+    private func stringToDate (date : String) -> NSDate {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        dateFormatter.timeZone = NSTimeZone.localTimeZone()
+        // convert string into date
+        return dateFormatter.dateFromString(date) as NSDate!
     }
     
 }

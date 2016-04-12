@@ -30,6 +30,10 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.programmeTableView.reloadData()
+    }
+    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.programme.numberOfDays()

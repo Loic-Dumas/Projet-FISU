@@ -73,13 +73,8 @@ class Programme {
 
         return (dateIndex!, activityIndex!)
     }
-    /*
-    func buildActivity(name name : String, descriptionActivity : String, begin : NSDate, end : NSDate, going : Bool, category : ActivityCategory, location : Place, speakerSet : SpeakerSet) -> Activity {
-        var newActivity = self.coreDataManager.buildActivity(name: name, descriptionActivity : descriptionActivity, begin : begin, end : end, going : going, category : category, location : location, speakerSet : speakerSet)
-        
-        return newActivity
-    }
-    */
+    
+    
     func getActivityDay(day: NSDate) -> DayWithActivities? {
         var activityDay: DayWithActivities? = nil
         for activityDayTemp in self.activityDays {

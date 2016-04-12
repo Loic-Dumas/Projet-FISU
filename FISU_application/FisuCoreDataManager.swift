@@ -334,7 +334,7 @@ class FisuCoreDataManager {
         restoU.setValue(14, forKey: "closing")
         
         restoMarvellous.setValue("Marvellous", forKey: "name")
-        restoMarvellous.setValue("Restaurant spécialisé dans les comics. De nombreux plats à déguster pour un prix modeste. Le soir, fait également bar gay, d'après google. Et nous recommandons le burger avec le magré de canard ! ", forKey: "descriptionRestaurant")
+        restoMarvellous.setValue("Restaurant spécialisé dans les comics. De nombreux plats à déguster pour un prix modeste. Le soir, fait également bar gay, d'après google. Et nous recommandons le burger avec le magret de canard ! ", forKey: "descriptionRestaurant")
         restoMarvellous.setValue(5, forKey: "rate")
         restoMarvellous.setValue(placeMarvellous, forKey: "location")
         restoMarvellous.setValue(11, forKey: "openning")

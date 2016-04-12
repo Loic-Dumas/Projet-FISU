@@ -25,6 +25,12 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func goingActionSwitch(sender: AnyObject) {
         self.activity?.going = !(self.activity?.going)!
         
+        do {
+            try self.activity?.managedObjectContext?.save()
+        } catch let error as NSError  {
+            print("Could not save (switch) \(error), \(error.userInfo)")
+        }
+        
         
     }
     

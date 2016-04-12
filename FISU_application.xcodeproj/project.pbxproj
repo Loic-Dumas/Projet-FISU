@@ -60,6 +60,9 @@
 		E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C21CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift */; };
 		E21A31E21CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
 		E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A31C31CA4044C00B83BC4 /* Restaurant.swift */; };
+		E2493F0D1CBCCB0900BDD760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
+		E2493F0E1CBCCBBB00BDD760 /* FISU_application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */; };
+		E2493F0F1CBCCBD900BDD760 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E0671C91B43500AF8CE9 /* MapViewController.swift */; };
 		E251998B1CBC209000853B07 /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = E251998A1CBC209000853B07 /* sport.png */; };
 		E25199911CBC548600853B07 /* micro.png in Resources */ = {isa = PBXBuildFile; fileRef = E25199901CBC548600853B07 /* micro.png */; };
 		E25199951CBC548C00853B07 /* microChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = E25199921CBC548C00853B07 /* microChecked.png */; };
@@ -433,11 +436,14 @@
 				AD71E34C1CB39FDD005E784E /* Map.swift in Sources */,
 				AD71E3401CB39F88005E784E /* Event.swift in Sources */,
 				AD71E34F1CB3A2A0005E784E /* SpeakerSet.swift in Sources */,
+				E2493F0E1CBCCBBB00BDD760 /* FISU_application.xcdatamodeld in Sources */,
 				E2ECC0D51CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */,
+				E2493F0F1CBCCBD900BDD760 /* MapViewController.swift in Sources */,
 				E21A31DF1CA4044C00B83BC4 /* ActivityCategory.swift in Sources */,
 				E21A31CF1CA4044C00B83BC4 /* Speaker.swift in Sources */,
 				AD71E3431CB39FC0005E784E /* Programme.swift in Sources */,
 				E2AD35641CB6B5C300891CF2 /* SpeakerTableViewCell.swift in Sources */,
+				E2493F0D1CBCCB0900BDD760 /* AppDelegate.swift in Sources */,
 				E21A31D51CA4044C00B83BC4 /* Place+CoreDataProperties.swift in Sources */,
 				E2ECC0CC1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */,
 				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
