@@ -8,47 +8,25 @@
 
 import Foundation
 
+// Class who represent the program.
+// A program have a set of DayWithActivities
+// A DayWithActivities is a day with a set of activities
+// The fonctionnalities of a Program are :
+// - add an activity
+// - get the dayWithActivities corresponding at a day
+// - get the index'st activity of the DayWithActivity with the day in parameter
+// - get the activity with an index for the DayWithActivity and an index for the activity (into the DayWithActivity)
+// - get the DayWithActivity with an index
+// - get the number of day (the same than the number of DayWithActivity)
+// - get the number of activity for a day
+// - get the number of activity for an index
+// - get the index of an activity
 class Programme {
-
-    static func getTestProgramme() -> Programme {
-        let coreDataManager = FisuCoreDataManager()
-        let p = Programme(coreDataManager: coreDataManager)
-        /*
-        p.addActivity(Activity(name: "Openning ceremony", place: Place.polytech, begin: "07-04-2016 09:00", end: "07-04-2016 12:30"))
-        p.addActivity(Activity(name: "Lunch", place: Place.polytech, begin: "07-04-2016 12:30", end: "07-04-2016 13:45"))
-        p.addActivity(Activity(name: "UNESCO session", place: Place.polytech, begin: "07-04-2016 13:45", end: "07-04-2016 14:30"))
-        p.addActivity(Activity(name: "Introduction to the week's aims/methodology", place: Place.polytech, begin: "07-04-2016 14:15", end: "07-04-2016 15:15"))
-        p.addActivity(Activity(name: "Coffee break", place: Place.polytech, begin: "07-04-2016 15:15", end: "07-04-2016 15:30"))
-        p.addActivity(Activity(name: "Definition of project working groups", place: Place.polytech, begin: "07-04-2016 15:30", end: "07-04-2016 16:30"))
-        p.addActivity(Activity(name: "Transition to ice-breaking activity", place: Place.polytech, begin: "07-04-2016 16:30", end: "07-04-2016 17:00"))
-        p.addActivity(Activity(name: "Boules/pétanque", place: Place.polytech, begin: "07-04-2016 17:00", end: "07-04-2016 19:00"))
-        p.addActivity(Activity(name: "Transition/closing change", place: Place.polytech, begin: "07-04-2016 19:00", end: "07-04-2016 19:45"))
-        p.addActivity(Activity(name: "Official reception/opening dinner", place: Place.polytech, begin: "07-04-2016 19:45", end: "07-04-2016 22:00"))
-        
-        p.addActivity(Activity(name: "Plenary session: Values/Ethics/Integrity", place: Place.polytech, begin: "07-05-2016 09:00", end: "07-05-2016 10:00"))
-        p.addActivity(Activity(name: "Workshops: Values/Ethics/Integrity", place: Place.polytech, begin: "07-05-2016 10:00", end: "07-05-2016 11:00"))
-        p.addActivity(Activity(name: "Coffee break", place: Place.polytech, begin: "07-05-2016 11:15", end: "07-05-2016 11:30"))
-        p.addActivity(Activity(name: "Project working session", place: Place.polytech, begin: "07-05-2016 11:30", end: "07-05-2016 12:30"))
-        p.addActivity(Activity(name: "Lunch", place: Place.polytech, begin: "07-05-2016 12:30", end: "07-05-2016 13:45"))
-        p.addActivity(Activity(name: "Plenary session: Health/Social Care/Anti-doping", place: Place.polytech, begin: "07-05-2016 13:45", end: "07-05-2016 14:45"))
-        p.addActivity(Activity(name: "Workshops Health/Social Care/Anti-doping", place: Place.polytech, begin: "07-05-2016 14:45", end: "07-05-2016 15:45"))
-        p.addActivity(Activity(name: "Coffee break", place: Place.polytech, begin: "07-05-2016 15:45", end: "07-05-2016 16:00"))
-        p.addActivity(Activity(name: "Transition to cultural activity", place: Place.polytech, begin: "07-05-2016 16:00", end: "07-05-2016 16:30"))
-        p.addActivity(Activity(name: "Visit of Montpellier", place: Place.polytech, begin: "07-05-2016 16:30", end: "07-05-2016 18:30"))
-        p.addActivity(Activity(name: "Dinner", place: Place.polytech, begin: "07-05-2016 19:45", end: "07-05-2016 21:30"))
-        
-        p.addActivity(Activity(name: "Plenary session: Leadership", place: Place.polytech, begin: "07-06-2016 09:00", end: "07-06-2016 10:00"))
-        */
-    
-        return p
-    }
     
     private var activityDays = [DayWithActivities]()
     var activityCategory = [ActivityCategory]()
-    var coreDataManager: FisuCoreDataManager
     
-    init(coreDataManager : FisuCoreDataManager) {
-        self.coreDataManager = coreDataManager
+    init() {
     }
     
     func addActivity(activity : Activity) -> (dateIndex: Int, ActivityIndex: Int)? {

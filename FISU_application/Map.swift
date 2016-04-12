@@ -9,8 +9,8 @@
 import Foundation
 import MapKit
 
+// The Map class contains all the places using by the FISU
 class Map {
-    
     static private var map : Map? = nil
     
     static func getMap() -> Map {

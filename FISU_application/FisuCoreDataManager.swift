@@ -10,8 +10,8 @@ import UIKit
 import CoreData
 
 class FisuCoreDataManager {
-    var entityActivity : NSEntityDescription
     
+    var entityActivity : NSEntityDescription
     var managedObjectContext : NSManagedObjectContext
     
     init() {
@@ -113,11 +113,9 @@ class FisuCoreDataManager {
     }
     
     func createData() {
-        print("Nothing ! \nSo we add some default datas !")
         //2.1 create PlaceType
         let entityPlaceType =  NSEntityDescription.entityForName("PlaceType", inManagedObjectContext: self.managedObjectContext)
-        
-        
+                
         let placeTypeSport = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeTypeConference = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)
         let placeTypeAccomodation = NSManagedObject(entity: entityPlaceType!, insertIntoManagedObjectContext: self.managedObjectContext)

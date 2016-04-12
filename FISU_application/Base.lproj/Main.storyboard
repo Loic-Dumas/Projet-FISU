@@ -508,7 +508,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="udc-jH-uZf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="udc-jH-uZf">
                                 <rect key="frame" x="20" y="125" width="560" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -671,25 +671,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="y6l-cP-8eH">
-                                <rect key="frame" x="25" y="69" width="550" height="128"/>
+                                <rect key="frame" x="25" y="69" width="400" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="4dk-wN-vux"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human.png" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-rd-4HL">
+                                <rect key="frame" x="430" y="72" width="150" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="R8P-Au-gyL"/>
+                                    <constraint firstAttribute="width" constant="150" id="eai-rd-V5B"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="y6l-cP-8eH" secondAttribute="trailing" constant="5" id="UmC-n7-r0B"/>
-                            <constraint firstItem="y6l-cP-8eH" firstAttribute="leading" secondItem="IKq-t5-RlK" secondAttribute="leadingMargin" constant="5" id="XZx-87-kBV"/>
-                            <constraint firstItem="y6l-cP-8eH" firstAttribute="top" secondItem="eWs-a3-6Kt" secondAttribute="bottom" constant="5" id="h8H-7n-89P"/>
+                            <constraint firstItem="y6l-cP-8eH" firstAttribute="leading" secondItem="IKq-t5-RlK" secondAttribute="leadingMargin" constant="5" id="1xR-JY-f7X"/>
+                            <constraint firstItem="fVN-ht-yH5" firstAttribute="top" secondItem="y6l-cP-8eH" secondAttribute="bottom" id="7bw-rw-5Ka"/>
+                            <constraint firstItem="KsV-rd-4HL" firstAttribute="trailing" secondItem="IKq-t5-RlK" secondAttribute="trailingMargin" id="7j4-4X-U7h"/>
+                            <constraint firstItem="y6l-cP-8eH" firstAttribute="top" secondItem="eWs-a3-6Kt" secondAttribute="bottom" constant="5" id="TPq-tp-IBh"/>
+                            <constraint firstItem="KsV-rd-4HL" firstAttribute="leading" secondItem="y6l-cP-8eH" secondAttribute="trailing" constant="5" id="W9K-lb-63B"/>
+                            <constraint firstItem="KsV-rd-4HL" firstAttribute="top" secondItem="eWs-a3-6Kt" secondAttribute="bottom" constant="8" id="cfy-7k-Fxm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="4qL-2j-vA3"/>
                     <connections>
                         <outlet property="descriptionTextView" destination="y6l-cP-8eH" id="XS5-hC-zst"/>
+                        <outlet property="speakerImage" destination="KsV-rd-4HL" id="bXb-i6-oe4"/>
                         <outlet property="titleNavigationItem" destination="4qL-2j-vA3" id="Y4C-ul-c3e"/>
                     </connections>
                 </viewController>
@@ -700,6 +708,7 @@
     </scenes>
     <resources>
         <image name="1721692.png" width="239" height="400"/>
+        <image name="human.png" width="320" height="640"/>
         <image name="micro.png" width="626" height="626"/>
         <image name="tab-contact" width="50" height="50"/>
         <image name="tab-event" width="50" height="50"/>

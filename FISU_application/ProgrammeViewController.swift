@@ -30,11 +30,6 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.programmeTableView.reloadData()
-    }
-    
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.programme.numberOfDays()
     }
@@ -69,6 +64,8 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         default:
             if (programmeCell.activity?.going == true) {
                 programmeCell.iconImageView.image = UIImage(named: "microChecked.png")
+            } else {
+                programmeCell.iconImageView.image = UIImage(named: "micro.png")
             }
         }
         
@@ -79,6 +76,11 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         return self.programme.getAtIndex(section)!.dayToString()
     }
     
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        self.programmeTableView.reloadData()
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

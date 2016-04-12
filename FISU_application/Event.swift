@@ -8,12 +8,13 @@
 
 import Foundation
 
+// Class who represent the FISU event.
 class Event {
     var programme : Programme
     var restaurants : [Restaurant] = [Restaurant]()
     var map : Map = Map()
     
     init(coreDataManager : FisuCoreDataManager) {
-        self.programme = Programme(coreDataManager : coreDataManager)
+        self.programme = Programme()
     }
 }

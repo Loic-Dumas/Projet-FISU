@@ -9,6 +9,7 @@
 import XCTest
 @testable import FISU_application
 
+// The tests worked before the utilisation of the core data but not now.
 class FISU_applicationTests: XCTestCase {
     
      func getMontagne() -> Place {
@@ -40,6 +41,8 @@ class FISU_applicationTests: XCTestCase {
     
      func getActivitySki() -> Activity {
         let ski = Activity()
+        
+        //ski.setValue("Ski", forKey: "name")
         ski.name = "Ski"
         ski.descriptionActivity = "Ski dans la montagne"
         ski.going = false
@@ -114,11 +117,10 @@ class FISU_applicationTests: XCTestCase {
     }
     
     func testProgramme() {
-        let programme = Programme(coreDataManager: FisuCoreDataManager())
+        let programme = Programme()
         let ski = self.getActivitySki()
         let miam = self.getActivityRepas()
         let rando = self.getActivityRando()
-        
         
         XCTAssertEqual(programme.numberOfDays(), 0)
         
@@ -252,10 +254,6 @@ class FISU_applicationTests: XCTestCase {
         XCTAssertEqual(dayWithActivities.getActivityAtIndex(0), ski)
         XCTAssertEqual(dayWithActivities.getActivityAtIndex(1), rando)
         XCTAssertEqual(dayWithActivities.getActivityAtIndex(2), miam)
-    }
-    
-    func testExample() {
-        
     }
     
     func testPerformanceExample() {

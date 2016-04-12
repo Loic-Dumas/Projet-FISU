@@ -12,6 +12,7 @@ class SpeakerViewController: UIViewController {
     
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var titleNavigationItem: UINavigationItem!
+    @IBOutlet var speakerImage: UIImageView!
     
     var speaker : Speaker?
     
@@ -20,6 +21,10 @@ class SpeakerViewController: UIViewController {
         super.viewDidLoad()
         self.titleNavigationItem.title = self.speaker?.name
         self.descriptionTextView.text = self.speaker?.descriptionSpeaker
+//        guard let image = UIImage(named: "\(self.speaker?.name).png") else {
+//            print("lama")
+//            return
+//        }
     }
 
     override func didReceiveMemoryWarning() {

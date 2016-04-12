@@ -8,6 +8,11 @@
 
 import Foundation
 
+// RestaurantSet is a set of restaurant
+// In this set you can :
+// - add a restaurant
+// - get the index of a restaurant
+// - count the numbers of restaurants
 class RestaurantSet {
     var restaurants = [Restaurant]()
     

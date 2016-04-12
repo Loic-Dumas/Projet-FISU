@@ -9,6 +9,8 @@
 import Foundation
 import MapKit
 
+// PlaceAnnotation is the facade between the places and the Map.
+// Like this class implements MKAnnotation we can draw pins on the MapViews
 class PlaceAnnotation: NSObject, MKAnnotation {
     let title: String?
     let locationName: String

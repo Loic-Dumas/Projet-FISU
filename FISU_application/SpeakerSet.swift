@@ -8,6 +8,10 @@
 
 import Foundation
 
+// SpeakerSet is a set of speaker
+// In this set you can :
+// - add a speaker
+// - get the index of a speaker
 class SpeakerSet {
     var speakers = [Speaker]()
     

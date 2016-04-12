@@ -8,6 +8,18 @@
 
 import Foundation
 
+// DayWithActivities is a class who contains :
+// - a day
+// - a set of activities
+// The fonctionnalities are :
+// - add an activity
+// - get the activity at a index
+// - know if the day of this current activity is before or after another
+// - know if the current day is the same of a day in parameter
+// - know the index of an activity
+// - know if the entity contains an activity (in parameter)
+// - build a string corresponding of the day
+// know the number of activities
 class DayWithActivities : NSObject {
     var day : NSDate
     var activities : [Activity] = [Activity]()
