@@ -69,18 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         
-        
-        
-        
-        
-        
-        
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("tmp37.sqlite")
-        
-        
-        
-        
-        
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("FisuDB.sqlite")
         
         var failureReason = "There was an error creating or loading the application's saved data."
         do {

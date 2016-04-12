@@ -419,7 +419,7 @@
         <!--EventName-->
         <scene sceneID="Qnr-h0-hhO">
             <objects>
-                <viewController id="IUv-Bi-jKB" customClass="EventViewController" customModule="FISU_application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IUv-Bi-jKB" customClass="ActivityViewController" customModule="FISU_application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KWc-QU-vJq"/>
                         <viewControllerLayoutGuide type="bottom" id="f92-r1-UBy"/>

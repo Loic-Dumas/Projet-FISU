@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 
+// view controller for a restaurant
 class RestaurantPageViewController: UIViewController {
     var restaurant : Restaurant? = nil
     @IBOutlet weak var openCloseLabel: UILabel!
@@ -47,10 +48,7 @@ class RestaurantPageViewController: UIViewController {
         self.restaurantMapView.setRegion(coordinateRegion, animated: true)
     }
     
-    
-    
-    
-    
+        
     
     private func rateInStar(rateNumber : Int) -> String {
         var rateString = ""

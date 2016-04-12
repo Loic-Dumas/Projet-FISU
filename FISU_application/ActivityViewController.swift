@@ -9,7 +9,9 @@
 import UIKit
 import CoreData
 
-class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+// This ViewControler is used to displays information of an activity
+// Basic infoof an activity, more a spekers tableview
+class ActivityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     var activity : Activity? = nil
     @IBOutlet weak var titleNavigatonItem: UINavigationItem!
@@ -88,10 +90,6 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cellSender = sender as! SpeakerTableViewCell
         
         speakerViewController.speaker = cellSender.speaker
-    }
-    
-    override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
-        print("Bye bye")
     }
     
 

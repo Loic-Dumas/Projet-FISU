@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ProgrammeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var activityName: UILabel!

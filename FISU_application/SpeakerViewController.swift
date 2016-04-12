@@ -8,6 +8,7 @@
 
 import UIKit
 
+// viewController for a speaker
 class SpeakerViewController: UIViewController {
     
     @IBOutlet weak var descriptionTextView: UITextView!

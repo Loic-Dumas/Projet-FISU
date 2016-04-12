@@ -8,6 +8,7 @@
 
 import UIKit
 
+// viewController who displays all restaurants
 class RestaurantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
     @IBOutlet weak var restaurantTableView: UITableView!

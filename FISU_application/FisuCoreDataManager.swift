@@ -100,9 +100,7 @@ class FisuCoreDataManager {
             fatalError("There was an error fetching the list of Place ! \(error)")
         }
         
-        
-        // we don't load for Speakers, DailySchedule, Hour
-        
+        // if no data initialized
         if(activities.count == 0) {
             print("Creation of the CoreData")
             self.createData()

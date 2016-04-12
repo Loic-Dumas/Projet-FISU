@@ -11,6 +11,8 @@
 import UIKit
 import MapKit
 
+
+// controller for the map
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapKitView: MKMapView!

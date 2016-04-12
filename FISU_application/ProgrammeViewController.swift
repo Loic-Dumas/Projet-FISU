@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// This controler is used to display all activities in a table View
 class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var programmeTableView: UITableView!
@@ -44,7 +46,6 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
         programmeCell.activity = programme.getAtIndex(indexPath.section, activityIndex: indexPath.row)
         programmeCell.activityBeginning.text = programmeCell.activity?.beginHourToString()
         programmeCell.activityName.text = programmeCell.activity?.name
-        
         
         //add the icons
         switch programmeCell.activity!.category!.name! {
@@ -84,7 +85,7 @@ class ProgrammeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let eventViewController = segue.destinationViewController as! EventViewController
+        let eventViewController = segue.destinationViewController as! ActivityViewController
         
         let cellSender = sender as! ProgrammeTableViewCell
         

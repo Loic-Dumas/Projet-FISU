@@ -23,8 +23,8 @@
 		ADAAB9041C7C57E400EE9FEE /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */; };
 		ADAAB9091C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
 		ADAAB90A1C7C5B6000EE9FEE /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */; };
-		ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
-		ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */; };
+		ADB25C6B1C860B8E00AF3369 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* ActivityViewController.swift */; };
+		ADB25C6C1C860B8E00AF3369 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25C6A1C860B8E00AF3369 /* ActivityViewController.swift */; };
 		ADE05F1F1C7B21F600872D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */; };
 		ADE05F211C7B21F600872D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE05F201C7B21F600872D80 /* ViewController.swift */; };
 		ADE05F241C7B21F600872D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE05F221C7B21F600872D80 /* Main.storyboard */; };
@@ -85,8 +85,8 @@
 		E2ECC0D21CB94BB70058F888 /* RestaurantSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */; };
 		E2ECC0D41CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */; };
 		E2ECC0D51CB9555D0058F888 /* RestaurantPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */; };
-		E2ECC0DD1CBA7D4C0058F888 /* Place Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */; };
-		E2ECC0DE1CBA7D4C0058F888 /* Place Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */; };
+		E2ECC0DD1CBA7D4C0058F888 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* PlaceAnnotation.swift */; };
+		E2ECC0DE1CBA7D4C0058F888 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC0DC1CBA7D4C0058F888 /* PlaceAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,7 @@
 		AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerSet.swift; sourceTree = "<group>"; };
 		ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
-		ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		ADB25C6A1C860B8E00AF3369 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		ADE05F1B1C7B21F500872D80 /* FISU_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FISU_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE05F1E1C7B21F600872D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE05F201C7B21F600872D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSet.swift; sourceTree = "<group>"; };
 		E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantPageViewController.swift; sourceTree = "<group>"; };
-		E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place Annotation.swift"; sourceTree = "<group>"; };
+		E2ECC0DC1CBA7D4C0058F888 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,21 +195,11 @@
 				E21A31B11CA4029200B83BC4 /* FisuCoreDataManager.swift */,
 				ADE05F221C7B21F600872D80 /* Main.storyboard */,
 				ADE05F251C7B21F600872D80 /* FISU_application.xcdatamodeld */,
-				ADE05F201C7B21F600872D80 /* ViewController.swift */,
-				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
-				ADB25C6A1C860B8E00AF3369 /* EventViewController.swift */,
-				E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */,
-				E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */,
-				E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */,
-				E274E0671C91B43500AF8CE9 /* MapViewController.swift */,
-				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
-				E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */,
-				E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */,
 				ADE05F2A1C7B21F600872D80 /* LaunchScreen.storyboard */,
 				ADE05F2D1C7B21F600872D80 /* Info.plist */,
 				ADE05F281C7B21F600872D80 /* Assets.xcassets */,
+				E2493F211CBCF7C500BDD760 /* ViewController */,
 				ADE05F4A1C7B240E00872D80 /* Model */,
-				ADE913161C7DA08B003E9018 /* Utils */,
 			);
 			path = FISU_application;
 			sourceTree = "<group>";
@@ -231,18 +221,11 @@
 				AD71E34A1CB39FDD005E784E /* Map.swift */,
 				AD71E34D1CB3A2A0005E784E /* SpeakerSet.swift */,
 				E2ECC0D01CB94BB70058F888 /* RestaurantSet.swift */,
-				E2ECC0DC1CBA7D4C0058F888 /* Place Annotation.swift */,
+				E2ECC0DC1CBA7D4C0058F888 /* PlaceAnnotation.swift */,
 				AD71E3441CB39FCB005E784E /* DayWithActivities.swift */,
 				E21A31E41CA410E300B83BC4 /* CoreData */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		ADE913161C7DA08B003E9018 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 		E212B38A1CA5BF5200910947 /* Resources */ = {
@@ -278,6 +261,31 @@
 				E21A31C31CA4044C00B83BC4 /* Restaurant.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		E2493F211CBCF7C500BDD760 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2493F221CBCF83B00BDD760 /* tableViewCell */,
+				ADE05F201C7B21F600872D80 /* ViewController.swift */,
+				ADAAB9081C7C5B6000EE9FEE /* ProgrammeViewController.swift */,
+				ADB25C6A1C860B8E00AF3369 /* ActivityViewController.swift */,
+				E2AD35651CB6C21100891CF2 /* SpeakerViewController.swift */,
+				E2ECC0CD1CB948F70058F888 /* RestaurantViewController.swift */,
+				E2ECC0D31CB9555D0058F888 /* RestaurantPageViewController.swift */,
+				E274E0671C91B43500AF8CE9 /* MapViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E2493F221CBCF83B00BDD760 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2ECC0CA1CB947FB0058F888 /* RestaurantTableViewCell.swift */,
+				E2AD35621CB6B5C300891CF2 /* SpeakerTableViewCell.swift */,
+				ADAAB9021C7C57E400EE9FEE /* ProgrammeTableViewCell.swift */,
+			);
+			name = tableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,10 +409,10 @@
 				E21A31D61CA4044C00B83BC4 /* Place.swift in Sources */,
 				E2ECC0CB1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */,
 				E274E0681C91B43500AF8CE9 /* MapViewController.swift in Sources */,
-				ADB25C6B1C860B8E00AF3369 /* EventViewController.swift in Sources */,
+				ADB25C6B1C860B8E00AF3369 /* ActivityViewController.swift in Sources */,
 				AD71E3421CB39FC0005E784E /* Programme.swift in Sources */,
 				E21A31B21CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
-				E2ECC0DD1CBA7D4C0058F888 /* Place Annotation.swift in Sources */,
+				E2ECC0DD1CBA7D4C0058F888 /* PlaceAnnotation.swift in Sources */,
 				E21A31CC1CA4044C00B83BC4 /* Speaker+CoreDataProperties.swift in Sources */,
 				E2ECC0CE1CB948F70058F888 /* RestaurantViewController.swift in Sources */,
 				E2AD35661CB6C21100891CF2 /* SpeakerViewController.swift in Sources */,
@@ -458,8 +466,8 @@
 				E2ECC0CC1CB947FB0058F888 /* RestaurantTableViewCell.swift in Sources */,
 				E21A31B31CA4029200B83BC4 /* FisuCoreDataManager.swift in Sources */,
 				E21A31D71CA4044C00B83BC4 /* Place.swift in Sources */,
-				E2ECC0DE1CBA7D4C0058F888 /* Place Annotation.swift in Sources */,
-				ADB25C6C1C860B8E00AF3369 /* EventViewController.swift in Sources */,
+				E2ECC0DE1CBA7D4C0058F888 /* PlaceAnnotation.swift in Sources */,
+				ADB25C6C1C860B8E00AF3369 /* ActivityViewController.swift in Sources */,
 				E21A31E11CA4044C00B83BC4 /* Restaurant+CoreDataProperties.swift in Sources */,
 				E21A31D91CA4044C00B83BC4 /* Activity+CoreDataProperties.swift in Sources */,
 				E21A31E31CA4044C00B83BC4 /* Restaurant.swift in Sources */,
